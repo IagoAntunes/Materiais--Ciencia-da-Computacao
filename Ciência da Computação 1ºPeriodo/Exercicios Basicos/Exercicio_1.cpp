@@ -19,5 +19,5 @@ int main(){
 	printf("Seu IMC  e de %.2f",(peso)/(altura*altura));
 	
 	}
-
+	
 
