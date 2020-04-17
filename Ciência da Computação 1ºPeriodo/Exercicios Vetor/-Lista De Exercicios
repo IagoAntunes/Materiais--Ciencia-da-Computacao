@@ -1,0 +1,23 @@
+1.
+ Faça um programa para calcular o fatorial de um número informado pelo usuário.
+Obs. Por definição o fatorial de 0! = 1
+
+2.
+Utilizando a estrutura de repetição, elaborar um programa para calcular o valor de S.
+a) S = 1/1 + 3/2 + 5/3 + 7/4......+99/50
+
+b) S = 1/1 - 2/4 + 3/9 - 4/16 + 5/25 - 6/36 + .... - 10/100
+
+3. 
+Faça um programa em C para implementar o que se pede. Uma empresa A produz 1000 carros
+mensais e aumenta sua produção 2% ao mês, enquanto a empresa B 700 carros mensais e cresce
+7% ao mês, em quantos meses a empresa B terá produção superior à empresa A..
+
+4. 
+Faça um programa para receber 10 números inteiros. Ao final, multiplique todos os valores pelo 3 valor informado no vetor e apresente o resultado.
+
+5.
+Faça um programa para receber 10 números inteiros em um vetor A e 10 números em um vetor B. Grave os dados digitados em um vetor C de 20 posições. Sendo as 10 primeiras posições valores do vetor a e os 10 últimos valores do vetor B. Ao final liste os dados do vetor C.
+
+
+
