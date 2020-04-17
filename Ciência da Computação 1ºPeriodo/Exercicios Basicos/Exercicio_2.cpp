@@ -1,3 +1,8 @@
+
+/*2- Faça um programa que solicite ao usuário seu sexo (M ou F), dia de nascimento, mês de
+   nascimento, ano de nascimento, peso, altura e quanto calça. */
+
+
 #include <stdio.h>
 
 

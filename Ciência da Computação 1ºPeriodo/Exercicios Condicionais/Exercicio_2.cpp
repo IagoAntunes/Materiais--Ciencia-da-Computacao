@@ -1,3 +1,7 @@
+  
+/*Agora faça um programa que irá simular sua aprovação na UIT, o usuário deverá entrar com 3    notas, sendoque as duas primeiras devem ser menor que 30 e a última menor que 40. O usuário deverá entrar também como percentual de faltas. Como vocês sabem o aluno só é aprovado se tiver frequencia maior que 75 e nota maiorque 60. Nota entre 40 e 60 é recuperação. Frequencia abaixo de 75 e nota abaixo de 40 já é reprovação direto. */
+
+
 #include <stdio.h>
 
 

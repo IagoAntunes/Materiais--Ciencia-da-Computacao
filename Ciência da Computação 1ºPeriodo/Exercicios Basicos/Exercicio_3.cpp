@@ -1,3 +1,9 @@
+
+/* 3- Faça um programa que simule uma venda de pneus. Solicite ao usuário a quantidade de pneus, o
+   valor de cada pneu, o desconto da compra e em quantas parcelas será feito o pagamento. Ao final
+   imprimir as informações na tela com o valor de cada parcela. */
+
+
 #include <stdio.h>
 
 

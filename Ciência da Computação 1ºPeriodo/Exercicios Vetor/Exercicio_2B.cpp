@@ -1,3 +1,8 @@
+
+/*Utilizando a estrutura de repetição, elaborar um programa para calcular o valor de S.
+b) S = 1/1 - 2/4 + 3/9 - 4/16 + 5/25 - 6/36 + .... - 10/100    */
+
+
 #include <stdio.h>
 #include <stdlib.h>
 

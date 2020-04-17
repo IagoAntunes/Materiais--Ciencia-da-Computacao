@@ -1,3 +1,8 @@
+
+/*1- Faça um programa que solicite ao usuário seu peso e sua altura e ao
+   final informe qual é seu índice de massa corporal. */
+
+
 #include <stdio.h>
 
 

@@ -1,3 +1,7 @@
+
+/* Utilizando a estrutura de repetição, elaborar um programa para calcular o valor de S.
+a) S = 1/1 + 3/2 + 5/3 + 7/4......+99/50    */
+
 #include <stdio.h>
 #include <stdlib.h>
 

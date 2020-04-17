@@ -1,3 +1,9 @@
+
+/*  Faça um programa para calcular o fatorial de um número informado pelo usuário.
+    Obs. Por definição o fatorial de 0! = 1   */
+
+
+
 #include <stdio.h>
  
 int main()

@@ -1,3 +1,7 @@
+
+/* 4- Faça um programa que calcule lucros em um investimento. O usuário deverá informar o valor
+   investido e o valor final que foi sacado. Ao final informar o lucro em reais e em percentual. */
+
 #include <stdio.h>
 
 int main(){

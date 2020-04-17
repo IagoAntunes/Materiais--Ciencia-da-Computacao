@@ -1,3 +1,9 @@
+
+/* Faça um programa em C para implementar o que se pede. Uma empresa A produz 1000 carros
+mensais e aumenta sua produção 2% ao mês, enquanto a empresa B 700 carros mensais e cresce
+7% ao mês, em quantos meses a empresa B terá produção superior à empresa A..   */
+
+
 #include <stdio.h>
 
 int main()
