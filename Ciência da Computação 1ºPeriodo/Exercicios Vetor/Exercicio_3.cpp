@@ -35,6 +35,3 @@ int main()
 printf("\n\n %i meses!",meses);
 	  
 }
-
-
-

@@ -26,6 +26,3 @@ formula = impar - par;
 printf("\nRESULTADO:%f",formula);
 
 }
-
-
-

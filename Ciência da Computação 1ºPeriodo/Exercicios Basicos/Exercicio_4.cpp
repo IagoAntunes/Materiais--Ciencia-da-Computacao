@@ -26,4 +26,3 @@ int main(){
 	printf("\nLucro Percentual: %.0f %%",formula);
 
 	}
-

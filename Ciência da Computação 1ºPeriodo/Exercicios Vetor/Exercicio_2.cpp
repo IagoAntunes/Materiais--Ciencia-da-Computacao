@@ -20,5 +20,3 @@ nume=nume+2;
 printf("%f",soma);
 
 }
-
-

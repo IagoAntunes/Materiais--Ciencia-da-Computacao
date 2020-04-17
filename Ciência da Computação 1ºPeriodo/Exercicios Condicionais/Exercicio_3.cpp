@@ -36,4 +36,3 @@ int main()
       printf("Ordem = %.2f %.2f %.2f \n", n1, n3, n2);
   
 }
-
