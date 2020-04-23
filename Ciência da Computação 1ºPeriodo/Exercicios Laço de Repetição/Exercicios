@@ -1,0 +1,168 @@
+
+------------------=Exercicios=-----------------
+
+1) Faça um programa que escreva a música dos Patinho da Xuxa
+utilizando laço de repetição...
+
+2-Crie um sistema que crie que receba um número e imprima a
+imagem a seguir.
+Caso o usuário digite 5:
+xoxox
+oxoxo
+xoxox
+oxoxo
+xoxox
+
+3)Faça um programa de entrevista de emprego que pega o sexo,
+idade e formação escolar (1 para fundamental, 2 para médio e 3
+para superior) e determina o cargo a que a pessoa pode se
+candidatar, de acordo com a tabela:
+
+Sexo Idade Escolaridade Cargo
+F >25 médio Recepcionista
+M >40 fundamental Servente
+F ou M <30 Superior Auxiliar de RH
+
+Com qualquer outra opção deve-se imprimir "não há posição
+disponível". Ao final de cada entrevista deve-se perguntar se o 
+usuário ainda deseja continuar, caso a resposta seja N o
+programa deve finalizar.
+
+4) Crie um algoritmo que receba a quantidade de turmas do
+professor e a quantidade de alunos por turmas. Depois o sistema
+irá receber a nota de cada alunos em cada turma e imprimir na
+tela.
+
+5-Crie um sistema que receba a quantidade de linhas e imprima
+a imagem a seguir.
+Caso o usuário digite 4:
+*
+**
+***
+****
+
+6- Faça um programa que receba infinitos números do usuário. O
+sistema só deve parar de receber números caso o usuário digite
+um número primo ou um número negativo. Ao final, imprimir
+quantos números o usuário digitou.
+
+7-Você foi contratado para criar um código que escreva o grande
+sucesso da música popular brasileira, “creu”. Para isso você deve
+receber do usuário a velocidade que ele deseja e escrever a
+música da velocidade 1 até a informada, no seguinte formato,
+caso o usuário digite 3, deverá aparecer o código a seguir:
+Velocidade 1 do creu:
+creu
+Velocidade 2 do creu:
+creu creu
+Velocidade 3 do creu:
+creu creu creu
+
+8-Faça um programa que receba um número inteiro do usuário e calcule seu fatorial.
+
+9-O programa abaixo imprime uma letra I bem grande na tela:
+#include <stdio.h>
+#include <stdlib.h>
+int main(int argc, char *argv[])
+{
+int i = 0;
+printf("\n\nIIIIIII\n");
+while (i < 17) {
+printf(" III\n");
+i++;
+} 
+printf("IIIIIII\n\n");
+system("PAUSE");
+return 0;
+}
+Modifique este programa para usar um laço for ao invés do laço while. 
+
+10-Faça um programa parecido com o anterior, mas agora para imprimir a letra E. Obs.: todos as
+chamadas da função printf deverão estar dentro do laço for, com exceção dos “\n” finais. Para fazer
+impressões diferentes em cada iteração, utilize comandos condicionais (if) dentro do laço for.
+Exemplo de saída:
+EEEEEEEEEE
+EEE
+EEE
+EEE
+EEE
+EEE
+EEEEEEEEEE
+EEE
+EEE
+EEE
+EEE
+EEE
+EEE
+EEE
+EEE
+EEE
+EEEEEEEEEE 
+
+11-A algum tempo vocês fizeram um exercício que verificava o IMC de uma pessoa e dizia se ela
+estava acima do peso ou não. Refaça este exercício, porém no final você deve perguntar ao usuário:
+Deseja consultar o IMC de outra pessoa (s/n) ?
+Caso o usuário digite ‘s’ ou ‘S’ o programa deverá limpar a tela com system(“cls”), e voltar ao
+início, imprimindo novamente o texto inicial do programa. Caso contrário o programa deverá ser
+fechado. Dica: utilize um laço do while. 
+
+12- Faça um programa em C que imprima quais os números de 1 a 100 são divisíveis por 3 ou por
+7. Abaixo a saída do programa (apenas como exemplo) até o número 15:
+1 nao e divisivel por 3 nem por 7
+2 nao e divisivel por 3 nem por 7
+3 e divisivel por 3
+4 nao e divisivel por 3 nem por 7
+5 nao e divisivel por 3 nem por 7
+6 e divisivel por 3
+7 e divisivel por 7
+8 nao e divisivel por 3 nem por 7
+9 e divisivel por 3
+10 nao e divisivel por 3 nem por 7
+11 nao e divisivel por 3 nem por 7
+12 e divisivel por 3 
+
+13- Faça um programa em C que imprima as letras do alfabeto, produzindo a seguinte saída:
+
+Letras maiusculas:
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+Letras minusculas:
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+
+No entanto, você deve imprimir caractere por caractere, começando com a letra ‘A’ e depois um
+laço fará o resto, ou seja, a cada iteração você deverá incrementar o caractere, de tal forma a
+imprimir o ‘B’, depois o ‘C’, etc. Depois você deverá fazer outro laço com o mesmo raciocínio para
+imprimir as letras minúsculas. Dica: você pode incrementar o valor de uma variável char.
+
+14- Receba números digitados pelo usuários e armazene em um
+vetor de tamanho 10. Caso ele digite um número negativo, peça
+para digitar novamente. Ao final diga a quantidade de números
+pares e a quantidade de números ímpares.
+
+15-Anteriormente fizemos a série de fibonacci. Faça o mesmo
+exercício novamente, porém,
+utilizando vetores. O tamanho da série será dada pelo usuário.
+
+16- Crie um programa que receba o tempo de 5 corredores em 3
+etapas, depois some as 3 etapas em
+um quarto vetor e diga quem foi o campeão geral das 3 etapas.
+Exemplo
+Etapa1 3.22 4.14 2.10 2.18 4.08
+Etapa2 2.02 2.06 4.35 1.22 2.02
+Etapa3 2.10 3.15 3.20 6.15 2.00
+Total 7.34 9.35 9.65 9.55 8.10
+O vencedor da competição nas 3 etapas foi o corredor número 1.
+
+17-Elabore um algoritmo que leia dois vetores de dez posições e
+faça a multiplicação dos elementos de mesmo índice, colocando
+o resultado em um terceiro vetor, que deve ser mostrado como
+saída.
+
+18-Faça um algoritmo que preencha um vetor como nove
+números inteiros e mostre quais são primos e suas respectivas
+posições.
+
+19-)Escreva um algoritmo que leia um vetor de 20 posições e
+mostre-o. Em seguida, troque o primeiro elemento pelo o último,
+o segundo com o penúltimo, o terceiro com o antepenúltimo e,
+assim, sucessivamente. Mostre o novo vetor após todas as
+trocas. 
