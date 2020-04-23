@@ -1,5 +1,7 @@
 
-/*Faça um programa para receber 10 números inteiros. Ao final, multiplique todos os valores pelo 3 valor informado no vetor e apresente o resultado. */
+/*Faça um programa para receber 10 números inteiros. 
+Ao final, multiplique todos os valores pelo 3 valor informado no vetor e apresente o resultado. 
+*/
 
 
 #include <stdio.h>
