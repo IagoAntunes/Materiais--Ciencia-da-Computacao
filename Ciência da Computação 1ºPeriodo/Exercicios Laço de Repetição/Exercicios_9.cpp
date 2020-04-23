@@ -27,6 +27,5 @@ printf(" III\n");
 } 
 
 printf("IIIIIII\n\n");
-
 return 0;
 } 
