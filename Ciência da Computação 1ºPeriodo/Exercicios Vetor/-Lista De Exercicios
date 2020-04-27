@@ -19,5 +19,42 @@ Faça um programa para receber 10 números inteiros. Ao final, multiplique todos
 5.
 Faça um programa para receber 10 números inteiros em um vetor A e 10 números em um vetor B. Grave os dados digitados em um vetor C de 20 posições. Sendo as 10 primeiras posições valores do vetor a e os 10 últimos valores do vetor B. Ao final liste os dados do vetor C.
 
+6-
+Elaborar um programa em C para receber e armazenar 50 números reais em um vetor. Identificar e imprimir o maior
+e o menor número e as respectivas posições no vetor
+
+7-
+Elaborar um programa para ler a nota de 18 alunos de uma disciplina e armazenar em um vetor. Calcular e imprimir a
+média e o número de alunos que tiveram nota superior à média. Em todas as etapas do problema utilizar uma estrutura
+em laço para facilitar as tarefas.
+
+8-
+Faça um programa para receber uma relação de 12 números. A seguir apresente os números em ordem decrescente
+
+9-
+Faça um programa para que o usuário possa digitar o nome e o custo de 10 produtos diferentes. Determine o nome
+do item mais caro, e o nome do item mais barato.
+
+10-
+Dado um vetor de 15 números inteiros, escreva um programa que imprima todos os múltiplos de 3 que estão
+contidos no vetor. 
+
+11-
+Faça um programa para receber a produção e o nome de 50 produtos. Logo após liste o nome dos produtos que
+tiveram produção inferior a media. 
+
+12-
+– Faça um programa para receber uma relação de 10 números inteiros. Ao final multiplique cada um dos valores pelo
+maior número do vetor e apresente o resultado
+
+13-
+Faça um programa para receber um vetor A(25) “inteiros”, os números devem ser digitados por um
+usuário. A seguir, substitua todos os valores negativos de ‘A’ por zero. Ao final apresente todos os valores
+informados.
+
+14-
+– Faça um programa para o usuário digitar uma matriz A(5,5). Logo após, apresente o menor valor
+localizado acima da diagonal principal.
+
 
 
