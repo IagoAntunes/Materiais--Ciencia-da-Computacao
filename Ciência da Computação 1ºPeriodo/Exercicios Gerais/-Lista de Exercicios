@@ -1,0 +1,14 @@
+1-
+Faça um programa que informe se a pessoa esta con Coronavirus ou não,pergunte ao usuario 
+-Se ele esta com Febre - Se ele esta tossindo - Se esta com um corpo cansado,com resposta de 
+0 Para Baixo,1 para Moderado , 2 Para Grave.
+Pergunte tambem se o usuario teve contato com alguem com sintomas,caso a resposta seja 'Sim' e  A media das e perguntas anteriores for maior que 1,Diga:''Voce pode estar Infectado,procure um medico'',Caso a resposta seja 'Nao' ,informe ''Voce provavelmente nao esta infectado''.
+
+2-
+Faça um programa na qual o Usuario digite 50 numeros e imprima no final,mas,os numeros digitados que forem divisiveis por 4 e 7 devem ser sbuistituidos pela palavra 'PIM',caso o numer o digitado seja 13,nao informe nada.
+
+3-
+Faça um programa na qual o usuario possa digitar os valores da compra,o programa so encerra quando o usuario digitar 0,Ao final pergunte ao usuario o Numero de parcelas ,e se é para Entrega, Caso seja A vista(1 parcrela) o desconto sera de 50 %,Parcelado o desonto sera de 30%,O valor de entrega é de R$ 30,00,ao final informe o valor de cada parcela junto com o frete.
+
+4-
+Faça um programa que faça 5 perguntas[V ou F] iguais para o Marido E mulher,e informe no final,o numero de resposta Iguais.
