@@ -152,4 +152,5 @@ void fatorial (void)
         printf("\nFatorial: %d", fat);
     }
 }
-*/
+ */
+
