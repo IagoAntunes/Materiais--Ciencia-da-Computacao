@@ -59,3 +59,15 @@ soma dos elementos das linhas pares de B.
 14-
 O usuário deverá digitar 10 números em um vetor. Faça uma função para verificar
 quantos números são primos e retornar este valor.
+
+15-
+Faça uma função que receba uma matriz A(4x4) e retorne o menor elemento da
+diagonal principal. A posição do menor valor deve ser impressa na função principal.
+
+16-
+Faça uma função que receba uma matriz A(5x5) e retorne o menor valor dos
+elementos acima da diagonal principal.
+
+17-
+Faça uma função que receba um vetor A(25) “inteiros” e substitua todos os valores
+negativos de ‘A’ por zero. Imprima o vetor na função principal
