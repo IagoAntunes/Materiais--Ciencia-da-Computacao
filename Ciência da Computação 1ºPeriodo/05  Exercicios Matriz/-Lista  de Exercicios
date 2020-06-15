@@ -5,4 +5,33 @@ Faça um programa que monte uma Matriz ,e informe a soma das linhas
 Faça um programa que monte uma Matriz começando pela vertical,e informe a soma das colunas
 
 3-
+Nestes dias frios você foi solicitado para catalogar as temperaturas da última semana na
+cidade de Itaúna. Crie uma matriz de float 24x7 que represente hora do dia e o dia da semana. Peça
+ao usuário para preencher esta matriz, solicitando a temperatura naquele dia e horário. Ao final
+exiba os dias e horários em que a temperatura foi mais quente e mais fria na semana.
+
+4-
+Você deverá simular um bolão de loteria, onde irão participar 10 jogadores. Receba do
+usuário 6 números entre 1 e 20 para cada jogador. Depois sorteie 6 números aleatórios, também
+entre 1 e 20. Ao final dizer qual jogador fez mais pontos. Dica: deixa uma coluna da matriz para
+armazenar quantos números o usuário acertou.
+
+5-
+Crie duas matrizes 3x3. A primeira será digitada pelo usuário e a segunda deverá ser a
+primeira rotacionada 90º. Ex:
+
+6-
+Criar um algoritmo que carregue uma matriz 12 x 4 com os valores das vendas de uma loja,
+em que cada linha represente um mês do ano, e cada coluna, uma semana do mês. Para fins
+de simplificação considere que cada mês possui somente 4 semanas. Calcule e imprima: -
+Total vendido em cada mês do ano;
+Total vendido no ano.
+Qual a melhor semana para vender carros? 1ª, 2ª, 3ª ou 4ª?
+
+7-
+Utilizando matrizes faça um programa que receba 3 notas e o percentual de faltas de uma
+turma de 10 alunos. Ao final dizer quais estão reprovados.
+
+
+
 

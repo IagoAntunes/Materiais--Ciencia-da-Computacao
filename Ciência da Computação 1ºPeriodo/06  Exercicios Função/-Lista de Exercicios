@@ -71,3 +71,34 @@ elementos acima da diagonal principal.
 17-
 Faça uma função que receba um vetor A(25) “inteiros” e substitua todos os valores
 negativos de ‘A’ por zero. Imprima o vetor na função principal
+
+18-
+Continuação do exercício iniciado em sala. Fazer um programa que receba do usuário o
+tamanho do vetor de números reais. Receber os valores do usuário. O programa deverá inverter o
+vetor através de um função void (procedimento). Não é permitido utilizar um vetor auxiliar na
+função.
+
+19-
+ Você deverá criar uma função que retorna a data juliana. A data juliana é um valor de 0 a
+6 que é obtido atráves do dia, mês e ano de uma data e calculado da seguinte forma:
+((1461*(ano+4800+(mes-14)/12))/4+(367*(mes-2-12*((mes-14)/12)))/12- (3*((ano+4900+(mes14)/12)/100))/4+ dia-32075) O valor retornado(0 a 6) corresponde aos seguintes dias da semana: 0 –
+segunda-feira, 1 – terça-feira, 2 – quarta-feira, 3 – quinta-feira, 4 – sexta-feira, 5 – sábado, 6 –
+domingo. Desta forma você deverá receber o nome do usuário e o dia que ele nasceu e retornar, por
+exemplo, a seguinte frase: “Fulano, você nasceu em uma segunda-feira!”
+
+20-
+Fazer uma função que receba um número inteiro e retorne 1 caso seja par e 0 caso
+seja impar
+
+21-
+Faça uma função que recebe por parâmetro o raio de uma esfera e calcula o seu
+volume (v = (4 * 3,14 * R³)/3).
+
+22-
+Escreva um procedimento (procedimento é uma função do tipo void) que recebe as
+3 notas de um aluno e imprima se ele está aprovado, reprovado ou em exame
+especial (menor que 40 é reprovado, entre 40 e 59 é exame especial e maior que
+60 aprovado).
+
+23-
+Fazer uma função que receba um número inteiro e retorne o fatorial.
