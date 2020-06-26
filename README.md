@@ -1,5 +1,5 @@
-# Exercicios/Soluções da linguagem C/C++
-#### Exercicios concluidos durante meu curso de Ciencia da Computação.
+# Exercícios/Soluções da linguagem C/C++
+#### Exercícios concluidos durante meu curso de Ciência da Computação.
 ***
 #####  Linguagens:
   - C
