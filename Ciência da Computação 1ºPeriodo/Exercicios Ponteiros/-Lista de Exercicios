@@ -1,0 +1,66 @@
+
+1-
+Escreva um programa que declare um inteiro, um real e um char, e
+ponteiros para inteiro, real e char. Associe as variáveis aos
+ponteiros (use &). Modifique os valores de cada variável usando os
+ponteiros. Imprima os valores das variáveis antes e após a
+modificação.
+
+2-
+ Faça um programa que leia dois valores inteiros e chame uma função
+que receba estes2 valores de entrada e retorne o maior valor na
+primeira variável e o menor valor na segunda variável. Escreva o
+conteúdo das 2 variáveis na tela
+
+3-
+ Faça um programa para receber um vetor de 5 números inteiros. Os
+valores deverão ser informados na função principal. Implemente uma
+função auxiliar para multiplicar dos os números pelo maior valor
+informado no vetor. A função deverá receber os valores como utilizando
+ponteiro.
+
+4-
+Faça um programa para receber uma matriz “A” (3x3) números
+inteiros. Os valores deverão ser informados na função principal,
+juntamente com um fator multiplicador (constante X). Implemente uma
+função auxiliar para multiplicar todos os valores pela constante “X”
+informada na função principal. Grave estes valores em uma matriz “B”.
+Apresente o resultado na função principal.
+
+5-
+Faça um programa pare receber o código, nome, números de horas
+trabalhadas e valor da hora trabalhada de 20 funcionários. Esses dados
+deverão ser informados na função principal.
+Implemente funções auxiliares para:
+- Imprimir os dados de cada funcionário;
+- Calcular e imprimir o nome e o salário bruto dos funcionários;
+- Calcular e imprimir o(s) funcionário(s) com salário mais
+elevado.
+- Calcular e imprimir o(s) funcionário(s) com salário acima da
+média.
+
+6-
+Escrever um programa em C para receber duas matrizes N1(4,6) e
+N2(4,6), apresente:
+a) Uma matriz M1 que seja a soma de N1 e N2
+b) Uma matriz M2 que seja a diferença de N1 com N2
+* Implemente função
+
+7-
+Elaborar um programa em C para receber uma matriz M(6,6), o
+usuário deverá informar também um valor “M” para multiplicar a matriz.
+Implemente uma função utilizando ponteiro para efetuar os cálculos e
+outra para apresentar o resultado.
+
+8-
+ Faça um programa para receber uma matriz A (2,3) e outra matriz
+B(3,2) esses valores deverão ser digitados na função principal.
+Implemente uma função auxiliar para calcular a multiplicação das
+matrizes e apresentar o resultado.
+
+9-
+Elabore um programa em C para receber uma matriz M(4,4) e um valor “A” definido pelo usuário. Implemente
+uma função que receba como parâmetro um ponteiro para multiplicar todos os valores, informados na matriz anterior, por “A”.
+Apresente o resultado na função auxiliar. 
+
+11-

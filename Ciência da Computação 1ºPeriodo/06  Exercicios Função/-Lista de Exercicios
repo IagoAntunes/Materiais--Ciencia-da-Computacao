@@ -102,3 +102,8 @@ especial (menor que 40 é reprovado, entre 40 e 59 é exame especial e maior que
 
 23-
 Fazer uma função que receba um número inteiro e retorne o fatorial.
+
+24-
+Faça um programa em C para receber na função Principal uma relação de 10 números. Elabore uma função
+Auxiliar para trocar, todos os elementos de ordem ímpar do vetor com os elementos de ordem par imediatamente posteriores.
+Implemente vetor. 
