@@ -161,8 +161,13 @@ saída.
 números inteiros e mostre quais são primos e suas respectivas
 posições.
 
-19-)Escreva um algoritmo que leia um vetor de 20 posições e
+19-Escreva um algoritmo que leia um vetor de 20 posições e
 mostre-o. Em seguida, troque o primeiro elemento pelo o último,
 o segundo com o penúltimo, o terceiro com o antepenúltimo e,
 assim, sucessivamente. Mostre o novo vetor após todas as
 trocas. 
+
+20-
+Escreva um programa que receba um número inteiro não-negativo n e
+imprima os n primeiros
+números primos.

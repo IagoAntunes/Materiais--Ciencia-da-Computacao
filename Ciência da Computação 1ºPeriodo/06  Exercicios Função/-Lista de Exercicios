@@ -107,3 +107,24 @@ Fazer uma função que receba um número inteiro e retorne o fatorial.
 Faça um programa em C para receber na função Principal uma relação de 10 números. Elabore uma função
 Auxiliar para trocar, todos os elementos de ordem ímpar do vetor com os elementos de ordem par imediatamente posteriores.
 Implemente vetor. 
+
+25-
+Escreva uma função que receba como parâmetro uma lista de tamanho
+fixo 10 contendo apenas valores 0 e 1 e que imprima as posições inicial e final da maior seqüência
+S de elementos 0 dentro da lista. Ex: Lista={0,1,1,0,0,0,1,0,1,0} pini = 4 e pfim = 6 S={0,0,0} Obs:
+No caso de empate em tamanho, a primeira ocorrência de S é a que deve ser retornada.
+
+26-
+Escreva uma função que receba como parâmetro uma matriz quadrada
+de ordem n de inteiros e
+devolve verdadeiro se ela é uma matriz triangular superior, ou falso, caso contrário. Matriz
+triangular superior é uma matriz onde todos os elementos de posições acima da diagonal
+principal são diferentes de 0 e todos os elementos demais elementos são iguais a 0.
+
+27-
+Faça uma função que verifique se um número inteiro é perfeito ou não.
+Um valor é dito perfeito quando ele é igual a soma dos seus divisores excetuando ele próprio. (Ex: 6
+é perfeito, 6 = 1 + 2 + 3, que são seus divisores). A função deve
+retornar um valor booleano.
+
+
