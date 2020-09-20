@@ -1,0 +1,70 @@
+
+1-
+Um problema típico em ciência da computação consiste em converter um número da sua forma decimal
+para a forma binária. Por exemplo, o número 12 tem a sua representação binária igual a 1100. A forma mais
+simples de fazer isso é dividir o número sucessivamente por 2, onde o resto da i-ésima divisão vai ser o dígito
+i do número binário (da direita para a esquerda). Por exemplo: 12 / 2 = 6, resto 0 (1º dígito da direita para
+esquerda), 6 / 2 = 3, resto 0 (2º dígito da direita para esquerda), 3 / 2 = 1 resto 1 (3º dígito da direita para
+esquerda), 1 / 2 = 0 resto 1 (4º dígito da direita para esquerda). Resultado: 12 = 1100
+
+2-
+– Faça um programa para receber uma relação de 10 números inteiros em um vetor na função principal.
+Implemente uma função para receber os dados em um ponteiro. A função deverá ordenar os valores digitados
+em ordem crescente. O resultado deverá ser impresso na função principal
+
+3-
+Elabore um programa que contenha uma função que permita passar por parâmetro dois números inteiros
+A e B. A função deve calcular a soma entre estes dois números e armazenar o resultado na variável. A e a
+multiplicação de entre eles na variável B.
+O resultado deve ser impresso na função principal. Vale ressaltar que essa função não deve retornar nenhum
+valor.
+
+4-
+ Implemente uma função que calcule a área da superfície e o volume de uma esfera de raio R. Essa função
+deve obedecer ao protótipo:
+void calc_esfera (float R, float *area, float *volume)
+O resultado deve ser apresentado na função principal
+A área da superfície e o volume são dados, respectivamente, por:
+A = 4 ∗ p ∗ R
+2
+V = 4/3 ∗ p ∗ R
+
+5-
+- Crie um programa que permita armazenar o nome, a altura e da data de nascimento de 10 pessoas.
+Cada pessoa deve ser representada por uma struct.
+Ao final solicite ao usuário que informe uma altura para pesquisa. Liste os dados de todas as pessoas com
+altura igual o superior ao valor informado.
+
+6-
+Crie uma struct para controlar ações de uma bolsa de valores com as seguintes informações:
+• Nome da companhia
+• Área de atuação da companhia
+• Valor atual da ação (em reais)
+Implemente uma função para
+a) Entrada de dados para 10 empresas;
+b) Listar todas a empresas;
+c) Listar a ação mais valorizada;
+
+7-
+Faça um programa para receber uma quantidade de números inteiros definida pelo usuário no momento
+da execução do programa. Ao final apresente
+a) A soma dos números informados;
+b) A média;
+c) O maior valor:
+d) O menor valor;
+Obs. Implemente uma função para cada item.
+
+8-
+Implemente uma struct para receber os dados dos funcionários:
+Nome;
+Idade;
+CPF;
+Endereço.
+E outra struct para receber as informações abaixo de cada funcionário
+Salario hora;
+Horas trabalhadas por dia;
+Número de dias trabalhados no mês.
+Implemente um programa para que o usuário possa informar o número de funcionários que deseja cadastrar.
+Ao final apresente os seguintes resultados.
+a) O nome, CPF, e salário mensal de cada funcionário.
+b) O valor total que a empresa irá precisar para efetuar o pagamento de todos os funcionários
