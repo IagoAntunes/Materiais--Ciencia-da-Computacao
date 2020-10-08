@@ -1,3 +1,5 @@
+![](https://imgur.com/38RyDmc.png)
+
 # Exercícios/Soluções da linguagem C/C++
 #### Exercícios concluidos durante meu curso de Ciência da Computação.
 ***
