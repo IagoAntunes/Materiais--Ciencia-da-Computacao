@@ -15,7 +15,7 @@
 
 ##### Rede Social:
 
-:point_right: [Portfólio](https://busque.dev/h/iago)
+:point_right: [Portfólio](https://iagoantunes.github.io/)
 
 :point_right: [Instagram](https://www.instagram.com/iago_ferreira010/?hl=pt-br)
 
