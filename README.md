@@ -1,15 +1,21 @@
 # Exercícios/Soluções da linguagem C/C++
+![](https://imgur.com/38RyDmc.png)
+
 #### Exercícios concluidos durante meu curso de Ciência da Computação.
 ***
 #####  Linguagens:
   - C
   - C++
-  
- 
 ***
+
+##### Periodo:
+  - [1ºPeriodo](https://github.com/IagoAntunes/Materiais--Ciencia-da-Computacao/tree/master/Ci%C3%AAncia%20da%20Computa%C3%A7%C3%A3o%201%C2%BAPeriodo)
+  - [2ºPeriodo](https://github.com/IagoAntunes/Materiais--Ciencia-da-Computacao/tree/master/Ci%C3%AAncia%20da%20Computa%C3%A7%C3%A3o%202%C2%BAPeriodo)
+
+
 ##### Rede Social:
 
-:point_right: [Portfólio](https://busque.dev/h/iago)
+:point_right: [Portfólio](https://iagoantunes.github.io/)
 
 :point_right: [Instagram](https://www.instagram.com/iago_ferreira010/?hl=pt-br)
 
