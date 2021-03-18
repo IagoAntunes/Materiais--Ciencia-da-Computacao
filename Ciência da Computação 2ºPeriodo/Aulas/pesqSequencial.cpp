@@ -3,39 +3,44 @@
 #include<stdbool.h>
 #define TAM 10
 
-bool pesquisa(int vetor[], int chave){
-    int resp = false;
-    int count = 0;
-    for(int i=0; i<TAM; i++){
-        count++;
-        if(vetor[i] == chave){
-            resp = true;
-            i = TAM;
-        }
-    }
-    printf("Esta na posição %i do Vetor\n", count);
-    return resp;
-}
 
-void print(int vetor[]){
-    printf("[ ");
-    for (int i = 0; i < TAM; i++)
-        printf("%i, ", vetor[i]);
-    printf(" ]\n\n");
+bool pesquisa(int vetor[],int chave){
+	
+	bool resp = false;
+	for(int i=0;i<TAM;i++){
+		if(vetor[i] == chave){
+			i = TAM;
+			resp = true;
+		}
+	}
+	return resp;
+	
 }
-
+int print(int vetor[],int chave){
+	
+	printf("[");
+	for(int i=0;i<TAM;i++){
+		printf("%i",vetor[i]);
+	}
+	printf("]");
+	
+	
+}
 int main(){
-    int vetor[TAM];
-    for(int i=0; i<TAM; i++){
+	int vetor[TAM],opc;
+	
+	for(int i=0; i<TAM; i++){
         vetor[i] = rand()%TAM;
     }
-    int chave;
-    print(vetor);
-    printf("Digite um Numero: \n");
-    scanf("%i", &chave);
-    if(pesquisa(vetor, chave)){
-        printf("Numero não encotnrado \n");
-    } else {
-        printf("Numero Encontrado!! \n");
-    }
+    
+    print(vetor,opc);
+    
+    printf("Digite um Numero: ");
+    scanf("%i",&opc);
+    
+    if(pesquisa(vetor,opc) == true){
+    	printf("Achei");
+	}else{
+		printf("Não Achei");
+	}
 }
