@@ -69,11 +69,13 @@ int treeAltura(Node *root) { //Calcula Altura
 
 int  main(){
 	Node *root = initialize();
-	root = treeInsert(root,itemCreate(15));           
-	root = treeInsert(root,itemCreate(18));			
+	root = treeInsert(root,itemCreate(5));           
+	root = treeInsert(root,itemCreate(3));			
 	root = treeInsert(root,itemCreate(7));		
-	root = treeInsert(root,itemCreate(19));
-	root = treeInsert(root,itemCreate(20));
+	root = treeInsert(root,itemCreate(6));
+	root = treeInsert(root,itemCreate(4));
+	root = treeInsert(root,itemCreate(2));
+	root = treeInsert(root,itemCreate(1));
 	
 
 	printf("\n Arvore Binaria >>> ");
