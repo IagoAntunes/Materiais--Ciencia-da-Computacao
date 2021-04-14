@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 bool pesquisaSequencial(int vetor[], int chave,int capacidade){
     int resp = false;
     int count = 0;
@@ -52,7 +51,6 @@ Node *treeInsert(Node *root,Item x){ //INSERINDO PRODUTOS
 		return aux;   
 	}
 	else{
-		//printf("\n X.COD = %i  ROOT.ITEM = %i\n",x.cod,root->item.cod);
 		if(x.cod > root->item.cod){  
 			root->right = treeInsert(root->right,x);
 		}else if(x.cod < root->item.cod){
@@ -69,8 +67,6 @@ void treePrint(Node *root){
 		treePrint(root->right);
 	}	
 }
-
-
 
 int  main(){
 	Node *root = initialize();
@@ -89,14 +85,11 @@ int  main(){
 		root = treeInsert(root,itemCreate(produto)); 
 	}
 	
-	
 	int codigo2;
-
 	int codigos[count];
 	
 	for(int i=0;i<count;i++){
-		
-		printf("Codigo");
+		printf("Codigo do Produto %i >> ",i);
 		scanf("%i",&codigos[i]);
 	};
 	printf("Pesquisar codigo:");
