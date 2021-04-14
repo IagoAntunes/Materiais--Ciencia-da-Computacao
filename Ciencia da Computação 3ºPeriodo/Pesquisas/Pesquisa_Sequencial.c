@@ -1,56 +1,105 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include<stdbool.h>
 
-int preencher(int capa , int vetor[]){
+
+bool pesquisaSequencial(int vetor[], int chave,int capacidade){
+    int resp = false;
+    int count = 0;
+    for(int i=0; i<capacidade; i++){
+        count++;
+        if(vetor[i] == chave){
+            resp = true;
+            i = capacidade;
+        }
+    }
+    return resp;
+}
+
+struct item{
+
+	char cod;
+
+};
+
+typedef struct item Item;
+
+struct node{
 	
-	for(int i=0;i<capa;i++){
-		printf("Numero%i  ",i);
-		scanf("%i",&vetor[i]);
-	}	
+	Item item;
+	struct node *left;
+	struct node *right;
+};
+
+typedef struct node Node;
+
+
+Node *initialize(){//INICIANDO STRUCT
+	return NULL;
 }
-void printar(int capa, int vetor[]){
-	printf("[");
-	for(int i=0;i<capa;i++){
-		printf("  %i  ",vetor[i]);
+
+Item itemCreate(char cod){ //CRIANDO STRUCT
+	Item item;
+	item.cod = cod;
+	return item;
+}
+
+Node *treeInsert(Node *root,Item x){ //INSERINDO PRODUTOS
+	if(root == NULL){
+		Node *aux = (Node*)malloc(sizeof(Node));
+		aux->item = x;  
+		aux->left = NULL;  
+		aux->right=NULL;   
+		return aux;   
 	}
-	printf("]");
-}
-bool verificar(int capa, int vetor[], int num, int *local){
-	int resp = false;
-	for(int i=0;i<capa;i++){
-		if(vetor[i] == num){
-			*local = i;
-			i = capa;
-			resp = true;
+	else{
+		if(x.cod > root->item.cod){  
+			root->right = treeInsert(root->right,x);
+		}else if(x.cod < root->item.cod){
+			root->left = treeInsert(root->left,x);
 		}
 	}
-	return resp;
-	
+	return root;
 }
 
-int main(){
-	int capa,num,local,*plocal;
+void treePrint(Node *root){
+	if(root != NULL){
+		printf("   %d   ",root->item.cod);
+		treePrint(root->left);
+		treePrint(root->right);
+	}	
+}
+
+int  main(){
+	Node *root = initialize();
+	int opcao = 0,count;
+	char produto;
 	
-	plocal = &local;
-	
-	printf("Capacidade do Vetor ->");
-	scanf("%i",&capa);
-	
-	int vetor[capa];
-	preencher(capa,vetor);
-	
-	system("cls");
-	printf("Num:  ");
-	scanf("%i",&num);
-	verificar(capa,vetor,num,plocal);
-	if(verificar(capa,vetor,num,plocal) == true){
-		printf("NUM ENCONTRADO\n");
-		printf("INDICE = %i \n",*plocal);
-		
-	}else{
-		printf("Valor Invalido \n");
+	while(opcao != 1){
+		count ++;  
+		printf("\nDeseja Continuar ?[1]");
+		scanf("%i",&opcao);
+		if(opcao == 1){
+			break;
+		}
+		printf("\nAdicionar produto:");
+		scanf("%s",&produto);
+		root = treeInsert(root,itemCreate(produto)); 
 	}
 	
-	printar(capa,vetor);
+	int codigo2;
+	int codigos[count];
 	
+	for(int i=0;i<count;i++){
+		printf("Codigo do Produto %i >> ",i);
+		scanf("%i",&codigos[i]);
+	};
+	printf("Pesquisar codigo:");
+	scanf("%i",&codigo2);
+
+	if(pesquisaSequencial(codigos, codigo2,count) == true){
+        printf("\nCODIGO ENCONTRADO\n");
+    } else {
+        printf("CODIGO NAO ENCONTRADO\n");
+    }		
 }
