@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include<stdbool.h>
 
 bool pesquisaSequencial(int vetor[], int chave,int capacidade){
     int resp = false;
