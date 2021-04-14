@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include<stdbool.h>
 
+#include <stdio.h>
+#include <stdlib.h>
+#include<stdbool.h>
+
+
 bool pesquisaSequencial(int vetor[], int chave,int capacidade){
     int resp = false;
     int count = 0;
@@ -76,7 +81,7 @@ int  main(){
 	
 	while(opcao != 1){
 		count ++;  
-		printf("\nDeseja Continuar ?[1]");
+		printf("\nOpcao: ?[1]-Sair [2]-Inseri produto:   ");
 		scanf("%i",&opcao);
 		if(opcao == 1){
 			break;
@@ -97,8 +102,8 @@ int  main(){
 	scanf("%i",&codigo2);
 
 	if(pesquisaSequencial(codigos, codigo2,count) == true){
-        printf("CODIGO ENCONTRADO\n");
+        printf("\nCODIGO DO PRODUTO ENCONTRADO\n");
     } else {
-        printf("CODIGO NAO ENCONTRADO\n");
+        printf("CODIGO DO PRODUTO NAO ENCONTRADO\n");
     }		
 }
