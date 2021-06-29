@@ -60,8 +60,8 @@ int main(){
     int qtd;
     int repetido[30];
 
-    printf("Numero de Participantes");
-    scanf("%i",&qtd);
+    p
+    rintf("Numero de Participantes");scanf("%i",&qtd);
     preencher(qtd,repetido);
 
     for(int i =0;i<qtd;i++){

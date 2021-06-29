@@ -32,12 +32,14 @@ class carro{
 		}
 		int getCombustivel(){
 			return this->combustivel;
+			
 		}
 		int getKilometros(){
 			return this->kilometros;
 		}
 		
 		void imprimir(){
+			cout << "Combustivel Atual:  " <<getCarteira() <<endl;
 			cout << "Combustivel Atual:  " <<this->combustivel <<endl;
 			cout << "Kilometros Rodados: " <<this->kilometros <<endl;
 			
