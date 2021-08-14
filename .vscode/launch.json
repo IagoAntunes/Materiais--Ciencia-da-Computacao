@@ -5,6 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch Helloworld",
+            "request": "launch",
+            "mainClass": "Helloworld",
+            "projectName": "Materiais--Ciencia-da-Computacao_991b4681"
+        },
+        {
+            "type": "java",
+            "name": "Launch Simple",
+            "request": "launch",
+            "mainClass": "Simple",
+            "projectName": "Materiais--Ciencia-da-Computacao_991b4681"
+        },
+        {
             "name": "gcc.exe - Criar e depurar o arquivo ativo",
             "type": "cppdbg",
             "request": "launch",
