@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ex2",
+            "request": "launch",
+            "mainClass": "Ex2",
+            "projectName": "Materiais--Ciencia-da-Computacao_991b4681"
+        },
+        {
+            "type": "java",
             "name": "Launch Helloworld",
             "request": "launch",
             "mainClass": "Helloworld",
