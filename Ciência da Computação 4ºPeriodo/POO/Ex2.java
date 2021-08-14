@@ -1,4 +1,4 @@
-
+//Criar a classe caneta com pelo menos 3 atributos e 3 métodos... Instanciar uma caneta no método main
 class caneta{
     String cor;
     int tamanho;
