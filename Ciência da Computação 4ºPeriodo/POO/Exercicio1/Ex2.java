@@ -6,8 +6,8 @@ import java.util.Scanner;
 class caneta{
     String cor;
     String marca;
-    int quantidade;
-    int escreveu;
+    Integer quantidade;
+    Integer escreveu;
 
     public void inicializando(){
         this.cor = " ";
