@@ -3,9 +3,9 @@ package Exercicio2;
 public class Carro {
     
     private boolean ligado;
-    private int capacidadeTanque;
-    private int combustivel;
-    private int velocidade;
+    private Integer capacidadeTanque;
+    private Integer combustivel;
+    private Integer velocidade;
 
     public void andar(){
         if(getCombustivel() <= 0 || getLigado() == false){
