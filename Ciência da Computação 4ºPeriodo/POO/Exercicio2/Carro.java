@@ -26,6 +26,7 @@ public class Carro {
     public void setCombustivel(){
         this.combustivel = getcapacidadeTanque();
     }
+    //aaaaaaaaaaaaaa
     public int getCombustivel(){
         return this.combustivel;
     }
