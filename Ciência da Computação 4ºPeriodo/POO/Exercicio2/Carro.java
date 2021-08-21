@@ -20,7 +20,6 @@ public class Carro {
         System.out.println("Reabastecendo......");
         this.combustivel = getcapacidadeTanque();
     }
-
     public void setVelocidade(int velocidade){
         this.velocidade = velocidade;
     }
@@ -48,12 +47,9 @@ public class Carro {
         return this.velocidade;
     }
 
-    public void printar(){
-        System.out.println("\n\nVelocidade:" + getVelocidade()+
+    public String printar(){
+        return("\n\nVelocidade:" + getVelocidade()+
          "\nCombustivel:" + getCombustivel()+
          "\nLigado:"+getLigado());
     }
-
-
-
 }

@@ -11,12 +11,11 @@ class exercicio2 {
         carro1.setVelocidade(input.nextInt());
         System.out.println("Capacidade Tanque:");
         carro1.setcapacidadeTanque(input.nextInt());
+
+
         carro1.setLigado();
-
         carro1.andar();
-
         carro1.printar();
-
 
         //CARRO2
         Carro carro2 = new Carro();
@@ -25,18 +24,13 @@ class exercicio2 {
         carro2.setVelocidade(input.nextInt());
         System.out.println("Capacidade Tanque:");
         carro2.setcapacidadeTanque(input.nextInt());
+
+
         carro2.setLigado();
-        
         carro2.andar();
         carro2.andar();
         carro2.andar();
         carro2.printar();
 
- 
-
-
-
-
-
     }
- } 
+} 
