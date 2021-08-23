@@ -1,3 +1,11 @@
+/*
+Crie a classe Trabalhador com os atributos matrícula, nome e salário. Crie uma outra classe 
+com o método main e peça ao usuário para cadastrar 3 trabalhadores. Lembre-se que ninguém 
+pode ganhar menos que um salário mínimo. 
+*/
+
+
+
 package ExercicioInicial.Exercicio1;
 import java.util.Scanner;
 

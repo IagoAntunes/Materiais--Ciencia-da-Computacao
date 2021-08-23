@@ -1,3 +1,12 @@
+/*
+Crie a classe Eleitor com os atributos idade, sexo, nome e numero do título. Faça um 
+método que retorne se a pessoa é Obrigada, Desobrigada ou impedida de votar. Crie outra 
+classe para testar. 
+*/
+
+
+
+
 package ExercicioInicial.Exercicio2;
 import java.util.Scanner;
 public class main {
