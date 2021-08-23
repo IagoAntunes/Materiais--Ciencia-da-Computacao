@@ -14,8 +14,5 @@ public class main {
 
         System.out.print(produto.imprimir());
 
-        
-
-
     }
 }

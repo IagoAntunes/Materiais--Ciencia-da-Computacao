@@ -48,8 +48,6 @@ public class main {
         System.out.println("Nome: "+trab2.getNome() +"  Matricula: " + trab2.getMatricula() +"  Salario: " + trab2.getSalario());
         System.out.println("Nome: "+trab3.getNome() +"  Matricula: " + trab3.getMatricula() +"  Salario: " + trab3.getSalario());
 
-
-
     }
 }
 

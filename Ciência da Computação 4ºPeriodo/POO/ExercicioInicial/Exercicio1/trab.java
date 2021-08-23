@@ -42,6 +42,4 @@ public class trab {
         "\nNome: " + getNome() +
         "\nSalario: "+ getSalario());
     }
-
-
 }

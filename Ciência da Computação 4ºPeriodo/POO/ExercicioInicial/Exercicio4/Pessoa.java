@@ -33,8 +33,4 @@ public class Pessoa {
         "\nEndereco: "+getEndereco()+
         "\nTelefone: "+getTelefone());
     }
-
-
-
-
 }

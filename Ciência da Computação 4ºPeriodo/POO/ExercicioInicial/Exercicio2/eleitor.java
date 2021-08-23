@@ -32,8 +32,4 @@ public class eleitor {
     public int getNumero(){
         return this.numero;
     }
-
-
-
-
 }

@@ -21,6 +21,5 @@ public class main {
         System.out.println(pessoa1.imprimir());
         System.out.println(pessoa2.imprimir());
 
-
     }
 }

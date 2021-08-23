@@ -19,8 +19,5 @@ public class main {
         }else if(eleitor.getIdade() >= 18){
             System.out.println("Obrigado a votar!!");
         }
-
-
-
     }
 }

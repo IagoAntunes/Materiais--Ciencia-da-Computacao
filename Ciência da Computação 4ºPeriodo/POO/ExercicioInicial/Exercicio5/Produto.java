@@ -49,11 +49,4 @@ public class Produto {
         "\nMargem em Moeda: "+getMargemLucro()+
         "\nMargem em percentual: "+getMargemLucroPorcentagem());
     }
-
-
-
-
-
-
-
 }
