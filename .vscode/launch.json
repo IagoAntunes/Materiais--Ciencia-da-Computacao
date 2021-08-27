@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Testeteste",
+            "request": "launch",
+            "mainClass": "Testeteste",
+            "projectName": "Materiais--Ciencia-da-Computacao_991b4681"
+        },
+        {
+            "type": "java",
+            "name": "Launch DrawPanelTest",
+            "request": "launch",
+            "mainClass": "DrawPanelTest",
+            "projectName": "Materiais--Ciencia-da-Computacao_991b4681"
+        },
+        {
+            "type": "java",
+            "name": "Launch NameDialog",
+            "request": "launch",
+            "mainClass": "NameDialog",
+            "projectName": "Materiais--Ciencia-da-Computacao_991b4681"
+        },
+        {
+            "type": "java",
+            "name": "Launch input23",
+            "request": "launch",
+            "mainClass": "input23",
+            "projectName": "Materiais--Ciencia-da-Computacao_991b4681"
+        },
+        {
+            "type": "java",
+            "name": "Launch Dialog1",
+            "request": "launch",
+            "mainClass": "Dialog1",
+            "projectName": "Materiais--Ciencia-da-Computacao_991b4681"
+        },
+        {
+            "type": "java",
             "name": "Launch main",
             "request": "launch",
             "mainClass": "ExercicioInicial.Exercicio5.main",

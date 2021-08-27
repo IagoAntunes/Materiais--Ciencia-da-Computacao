@@ -12,7 +12,6 @@ public class trab {
         this.salario = 1200.00;
     }
 
-
     public void setTudo(Integer matricula , String nome, Double salario){
         this.matricula = matricula;
         this.nome = nome;
