@@ -26,7 +26,7 @@ import java.util.Scanner;
 
 
 public class main {
-    public static void main(String args[]) {  
+    public static void mano(String args[]) {  
         Scanner input = new Scanner(System.in); 
         Produto produto = new Produto();
 

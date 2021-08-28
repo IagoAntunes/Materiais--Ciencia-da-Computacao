@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "Exercicio4.main",
+            "projectName": "Materiais--Ciencia-da-Computacao_991b4681"
+        },
+        {
+            "type": "java",
+            "name": "Launch ShapesTest",
+            "request": "launch",
+            "mainClass": "Saporra.ShapesTest",
+            "projectName": "Materiais--Ciencia-da-Computacao_991b4681"
+        },
+        {
+            "type": "java",
+            "name": "Launch DrawSmileyTest",
+            "request": "launch",
+            "mainClass": "DrawSmileyTest",
+            "projectName": "Materiais--Ciencia-da-Computacao_991b4681"
+        },
+        {
+            "type": "java",
+            "name": "Launch ShapesTest",
+            "request": "launch",
+            "mainClass": "ShapesTest",
+            "projectName": "Materiais--Ciencia-da-Computacao_991b4681"
+        },
+        {
+            "type": "java",
+            "name": "Launch novo",
+            "request": "launch",
+            "mainClass": "novo",
+            "projectName": "Materiais--Ciencia-da-Computacao_991b4681"
+        },
+        {
+            "type": "java",
             "name": "Launch Testeteste",
             "request": "launch",
             "mainClass": "Testeteste",

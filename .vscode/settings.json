@@ -6,7 +6,8 @@
     },
     "java.project.sourcePaths": [
         "Ciência da Computação 4ºPeriodo/POO",
+        "Ciência da Computação 4ºPeriodo/Java/javaDesenho",
         "Ciência da Computação 4ºPeriodo/Exercicios",
-        "Ciência da Computação 4ºPeriodo/Java/javaDesenho"
+        "Ciência da Computação 4ºPeriodo/Smile"
     ]
 }
