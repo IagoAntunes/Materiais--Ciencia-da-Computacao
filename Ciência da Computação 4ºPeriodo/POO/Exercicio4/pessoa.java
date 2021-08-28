@@ -1,9 +1,11 @@
 package Exercicio4;
 
+import java.text.DecimalFormat;
+
 public class pessoa {
     //IMC = peso/ (altura x altura),
     private String nome;
-    private int sexo;
+    private String sexo;
     private double peso;
     private double altura;
     private double imc;
@@ -12,7 +14,15 @@ public class pessoa {
         this.nome = nome;
     }
     public void setSexo(String sexo){
-        this.sexo = Integer.parseInt(sexo);
+        
+        if(Integer.parseInt(sexo) == 1){
+            this.sexo = "Masculino";
+        }else if(Integer.parseInt(sexo)== 2){
+            this.sexo = "Feminino";
+        }else{
+            this.sexo = sexo;
+        }
+
     }
     public void setPeso(String peso){
         this.peso = Integer.parseInt(peso);
@@ -23,7 +33,7 @@ public class pessoa {
     public String getNome(){
         return this.nome;
     }
-    public int getSexo(){
+    public String getSexo(){
         return this.sexo;
     }
     public Double getPeso(){
@@ -36,17 +46,18 @@ public class pessoa {
         return this.imc;
     }
     public String CalculoIMC(){
+        DecimalFormat df = new DecimalFormat("###,##0.00");
         imc = (getPeso()/((getAltura()/100) * (getAltura()/100)));
         if(imc < 18.5){
-            return("MAGREZA" +" IMC = " + imc);
+            return("MAGREZA" +"\nIMC = " + df.format(imc));
         }else if(imc < 24.9){
-            return ("NORMAL" +" IMC = "+ imc);
+            return ("NORMAL" +"\nIMC = "+ df.format(imc));
         }else if(imc < 29.9){
-            return ("SOBREPESO"+" IMC = "+ imc);
+            return ("SOBREPESO"+"\nIMC = "+ df.format(imc));
         }else if(imc < 39.9){
-            return ("OBESIDADE"+" IMC = "+ imc);
+            return ("OBESIDADE"+"\nIMC = "+ df.format(imc));
         }else{
-            return ("OBESIDADE GRAVE"+" IMC = "+ imc);
+            return ("OBESIDADE GRAVE"+"\nIMC = "+ df.format(imc));
         }
     }
     public String imprimir(){

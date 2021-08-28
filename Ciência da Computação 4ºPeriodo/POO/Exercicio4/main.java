@@ -12,7 +12,7 @@ public class main {
         
         pessoa1.setAltura(JOptionPane.showInputDialog("Qual sua altura: "));
     
-        pessoa1.setSexo(JOptionPane.showInputDialog("Genero:"));
+        pessoa1.setSexo(JOptionPane.showInputDialog("Genero: \n[1]-M\n[2]-F"));
 
         pessoa1.setPeso(JOptionPane.showInputDialog("Peso: "));
 
