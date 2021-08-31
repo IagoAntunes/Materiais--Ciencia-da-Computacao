@@ -1,5 +1,3 @@
-package Exercicio4;
-
 import java.text.DecimalFormat;
 
 public class pessoa {

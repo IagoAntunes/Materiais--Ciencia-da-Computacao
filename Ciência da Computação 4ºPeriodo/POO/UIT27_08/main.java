@@ -1,4 +1,5 @@
-package Exercicio4;
+package UIT27_08;
+
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
