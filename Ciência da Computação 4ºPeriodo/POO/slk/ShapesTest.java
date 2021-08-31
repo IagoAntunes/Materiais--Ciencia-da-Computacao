@@ -1,4 +1,4 @@
-package Saporra;
+package slk;
 // Figura 5.28: ShapesTest.java
 // Obtendo a entrada de usuário e criando um JFrame para exibir Shapes.
 import javax.swing.JFrame; // manipula a exibição

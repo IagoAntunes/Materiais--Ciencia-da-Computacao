@@ -1,4 +1,4 @@
-package UIT27_08;
+package Exercicio4;
 
 import java.util.Scanner;
 import javax.swing.JOptionPane;
@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
 public class main {
     public static void main(String args[]){
         
-        Scanner input = new Scanner(System.in); 
+        //Scanner input = new Scanner(System.in); 
         pessoa pessoa1 = new pessoa();
 
         pessoa1.setnome(JOptionPane.showInputDialog("Qual seu nome: "));

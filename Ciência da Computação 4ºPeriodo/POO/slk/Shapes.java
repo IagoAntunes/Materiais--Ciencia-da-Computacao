@@ -1,4 +1,4 @@
-package Saporra;
+package slk;
 
 import java.awt.Graphics;
 import javax.swing.JPanel;
