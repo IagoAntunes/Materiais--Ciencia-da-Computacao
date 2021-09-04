@@ -2,15 +2,9 @@ package Exercicio5;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 /*
-
-
 (FEITO)Criar um projeto de  carro (novamente), onde, quando
 acelerar o carro, caso ele entre na reserva
 (10% ou menos do tanque), avisar o usuário.
-
-
-
-
 
 (FEITO)Criar o campo velocidade máxima, e o carro 
 deverá respeitar esse valor. 
@@ -39,8 +33,6 @@ ligar
 abastecer
 etc....
 */
-
-//.charAt(0)
 class Exercicio5 {
     public static void main(String args[]) { 
         Integer opc=0;
@@ -87,10 +79,8 @@ class Exercicio5 {
                 default:
                     System.out.println("Digite um numero correto!!");
                     break;
-
-
             }
         }while(opc != 6);
-        //descomto = teste ?v : f
     }
 }
+//descomto = teste ?v : f   - //.charAt(0)
