@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "Exercicio6.main",
+            "projectName": "Materiais--Ciencia-da-Computacao_991b4681"
+        },
+        {
+            "type": "java",
             "name": "Launch Exercicio5",
             "request": "launch",
             "mainClass": "Exercicio5.Exercicio5",
