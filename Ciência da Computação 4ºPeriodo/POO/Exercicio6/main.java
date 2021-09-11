@@ -7,7 +7,6 @@ Criar uma classe celular com os seguintes
  campos: modelo, nivelBateria, 
  ligado (tipo boolean) e som.
 
-
  O usuário pode carregar o celular,
  aumentar e diminuir o som e jogar, ao 
  jogar ele poderá escolher o jogo e a

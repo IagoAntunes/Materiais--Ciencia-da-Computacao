@@ -49,7 +49,7 @@ class Exercicio5 {
         Double potencia = input.nextDouble();
 
         carro.carro(modelo,capacidade,velocidadeMaxima,potencia);
-
+        //XOR ^
         do{
             System.out.println("---------------------------------------------------------");
             System.out.println(carro.printar());

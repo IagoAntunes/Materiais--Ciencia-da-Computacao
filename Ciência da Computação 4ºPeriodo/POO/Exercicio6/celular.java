@@ -3,12 +3,10 @@ import java.util.Random;
 
 public class celular {
     
-
     private String modelo;
     private Integer nivelBateria;
     private Boolean ligado;
     private Integer som;
-
 
     public void celular(String modelo, Integer nivelBateria, Integer som){
         setModelo(modelo);
@@ -108,7 +106,6 @@ public class celular {
             return "Você Errou...." + num;
         }
     }
-
     //Outros
     public Integer bateria(){
         if(getNivelBateria() <= 0){
@@ -121,9 +118,5 @@ public class celular {
         "\nNivel Bateria:"+getNivelBateria()+
         "\nLigado:"+getLigado()+
         "\nSom:"+getSom();
-
-
-
     }
-
 }
