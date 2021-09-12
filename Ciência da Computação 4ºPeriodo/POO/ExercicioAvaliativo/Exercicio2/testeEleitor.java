@@ -1,4 +1,4 @@
-package Exercicio8;
+package ExercicioAvaliativo.Exercicio2;
 
 public class testeEleitor {
     

@@ -1,4 +1,4 @@
-package Exercicio8;
+package ExercicioAvaliativo.Exercicio3;
 
 public class Boleto {
     
@@ -33,5 +33,5 @@ public class Boleto {
     public Boolean getIsPago(){
         return this.isPago;
     }
-
+    
 }

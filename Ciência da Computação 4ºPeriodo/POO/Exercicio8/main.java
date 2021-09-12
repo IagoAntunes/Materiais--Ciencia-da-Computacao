@@ -1,6 +1,8 @@
 package Exercicio8;
 import java.util.Scanner;
 
+import ExercicioAvaliativo.Exercicio2.Eleitor;
+import ExercicioAvaliativo.Exercicio3.Boleto;
 import ExercicioInicial.Exercicio1.trab;
 
 
@@ -9,7 +11,7 @@ public class main {
         Scanner input = new Scanner(System.in);
 
         trabalhador[] trabalhador = new trabalhador[3];
-        Eleitor eleitor = new eleitor();
+        Eleitor eleitor = new Eleitor();
 
         System.out.println("-Trabalhadores:");
         for(int i =0;i<3;i++){
@@ -34,6 +36,7 @@ public class main {
         String nome = input.nextLine();
         Boleto boleto = new Boleto(vencimento, valor, desconto, nome);
 
+        System.out.println("Times:");
         
 
 
