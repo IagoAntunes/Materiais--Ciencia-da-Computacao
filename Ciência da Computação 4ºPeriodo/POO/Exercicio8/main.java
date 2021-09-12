@@ -24,7 +24,17 @@ public class main {
         System.out.println(eleitor.Sistema());
 
         System.out.println("-Boletos:");
+        System.out.println("Vencimento:");
+        Integer vencimento = input.nextInt();
+        System.out.println("Valor: ");
+        Double valor = input.nextDouble();
+        System.out.println("Desconto: ");
+        Integer desconto = input.nextInt();
+        System.out.println("Nome:");
+        String nome = input.nextLine();
+        Boleto boleto = new Boleto(vencimento, valor, desconto, nome);
 
+        
 
 
     }
