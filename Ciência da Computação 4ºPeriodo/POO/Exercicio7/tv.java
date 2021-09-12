@@ -11,11 +11,13 @@ public class tv {
 
     public tv(String marca){
         this.marca = marca;
+        this.ligado = false;
     }
     public tv(String marca,int qtdCanais,int volumeMaximo){
         this.marca = marca;
         this.qtdCanais = qtdCanais;
         this.volumeMaximo = volumeMaximo;
+        this.ligado = false;
     }
     //get
     public int getVolume(){
@@ -31,13 +33,21 @@ public class tv {
     public void setCanal(int canal){
         this.canal = canal;
     }
+    public void setLigado(){
+
+        if(getLigado() == false){
+            this.ligado = true;
+        }else if(getLigado() == true){
+            this.ligado = false;
+        }
+    }
     //Funções
     public void aumentaVolume(){
-        if(isLigado() && volumeMaximo < 100)
+        if(isLigado() == true && getVolume() < this.volumeMaximo)
             this.volume = getVolume() + 1;
     }
     public void diminuiVolume(){
-        if(isLigado() && volumeMaximo > 0)
+        if(isLigado() && getVolume() > 0)
             this.volume = getVolume() - 1;
     }
     public void aumentaCanal(){
@@ -47,23 +57,18 @@ public class tv {
             this.canal = 0;
         }
     }
-    public void aumentaCanal(int aumenta){
-        if(isLigado() == true){
-            this.canal = getCanal() + aumenta;
+    public void aumentaCanal(int canal){
+        if(isLigado() == true && canal < qtdCanais && canal > 0){
+            this.canal = canal;
         }
     }
     public void diminuiCanal(){
-        if(isLigado() == true){
+        if(isLigado() == true && getCanal() > 0){
             this.canal = getCanal() - 1;
         }
     }
-    public void diminuiCanal(int diminui){
-        if(isLigado() == true){
-            this.canal = getCanal() - diminui;
-        }
-    }
     public void escolheCanal(int escolha){
-        if(isLigado() == true){
+        if(isLigado() == true && escolha> 0 && escolha < this.qtdCanais){
             setCanal(escolha);
         }
     }
@@ -79,6 +84,9 @@ public class tv {
     }
 
 
+    public String toString(){
+        return  "\nMarca:"+this.marca+ "\nVolume: "+getVolume()+"\nCanal: "+getCanal()+"\nLigado: "+getLigado();
+    }
 
     
 

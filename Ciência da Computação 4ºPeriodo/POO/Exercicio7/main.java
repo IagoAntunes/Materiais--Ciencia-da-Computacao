@@ -3,11 +3,10 @@ import java.util.Scanner;
 /*
 (FEITO) Crie uma classe Televisao com métodos que podem controlar o volume e trocar os canais da televisão.
 
-
- A TV só funciona ligada e deve ter limites de volume e canais. 
+A TV só funciona ligada e deve ter limites de volume e canais. 
  Os canais ao chegar no último volta para o primeiro. 
  
- Crie os seguintes controles:
+Crie os seguintes controles:
 (feito)aumentar ou diminuir a potência do volume de som em uma unidade de cada vez; 
 (FEITO) aumentar e diminuir o número do canal em uma unidade 
 (FEITO) trocar para um canal indicado ou subir um canal caso não seja informado o canal;
@@ -22,7 +21,6 @@ Crie o método toString que mostrará a marca da TV, o volume e o canal atual.
 public class main {
     
     public static void main(String args[]) { 
-
         Scanner input = new Scanner(System.in);
         int opc=0,canal;
 
@@ -36,7 +34,7 @@ public class main {
         tv televisao = new tv(marca,qtdCanais,volumeMaximo);
 
         do{
-            System.out.println("[1]Aumentar\n[2]Diminuir\n[3]TrocarCanal\n[4]ReceberValores");
+            System.out.println("[1]AumentarVolume\n[2]DiminuiVolume\n[3]AumentaCanal\n[4]DiminuiCanal\n[5]Ligartv\n[6]Consulta");
             opc = input.nextInt();
             switch(opc){
                 case 1://aumentar volume
@@ -46,27 +44,28 @@ public class main {
                     televisao.diminuiVolume();
                     break;
                 case 3://Trocar para canal
-                    System.out.println("Escolha o canal ou digite numero negativo:");
-                    canal = input.nextInt();
-                    if(canal > 0){
-                        televisao.aumentaCanal();
-                    }else{
+                    System.out.println("[1]Subir\n[2]EscolherCanal");
+                    int opc2 = input.nextInt();
+                    if(opc2 == 2){
+                        System.out.println("Escolher canal");
+                        canal = input.nextInt();
                         televisao.aumentaCanal(canal);
+                    }else if(opc2 == 1){
+                        televisao.aumentaCanal();
                     }
                     break;
                 case 4:
-                    System.out.println("Escolha o canal ou digite numero negativo:");
-                    canal = input.nextInt();
-                    if(canal > 0){
-                        televisao.diminuiCanal();
-                    }else{
-                        televisao.diminuiCanal(canal);
-                    }
+                    televisao.diminuiCanal();
                     break;
-                case 5://Receber valores
+                case 5:
+                    televisao.setLigado();
+                    break;
+                case 6:
                     System.out.println(televisao.consulta());
-                    break;
+                default:
+                    System.out.println("Alguma coisa de errado ...");
             }
+            System.out.println(televisao);
         }while(opc != 9);
     }
 }
