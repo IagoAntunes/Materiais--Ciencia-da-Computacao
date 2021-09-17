@@ -11,8 +11,9 @@ public class main {
         String serie1 = input.nextLine();
         System.out.println("Numero de jogadores:");
         Integer nJogadores1 = input.nextInt();
-        time time = new time(time1, serie1,nJogadores1);
-        time.mensagem();
+        time timeum = new time(time1, serie1,nJogadores1);
+        System.out.println(timeum.mensagem());
+        input.nextLine();
 
         System.out.println("Digite o nome do time: ");
         String time2 = input.nextLine();
@@ -21,7 +22,7 @@ public class main {
         System.out.println("Numero de jogadores:");
         Integer nJogadores2 = input.nextInt();
         time timedois = new time(time2, serie2, nJogadores2);
-        timedois.mensagem();
+        System.out.println(timedois.mensagem());
 
     }
 }
