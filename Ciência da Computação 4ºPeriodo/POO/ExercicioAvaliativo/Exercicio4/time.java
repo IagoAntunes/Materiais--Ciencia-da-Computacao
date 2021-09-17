@@ -1,7 +1,6 @@
 package ExercicioAvaliativo.Exercicio4;
 
 public class time{
-    
     private String nome;
     private String serie;
     private Integer nJogadores;
@@ -34,12 +33,7 @@ public class time{
     public Integer getnJogadores(){
         return this.nJogadores;
     }
-
     public String mensagem(){
         return ("\nNome:"+getNome()+"\nSerie:"+getSerie()+"\nNjogadores:"+getnJogadores());
     }
-
-
-
-    ///aaaa
 }
