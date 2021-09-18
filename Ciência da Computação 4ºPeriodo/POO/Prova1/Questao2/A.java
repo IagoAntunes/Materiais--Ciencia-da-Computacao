@@ -23,7 +23,6 @@ public class A {
             return true;
         }else{
             return false;
-        }
-        
+        } 
     }
 }
