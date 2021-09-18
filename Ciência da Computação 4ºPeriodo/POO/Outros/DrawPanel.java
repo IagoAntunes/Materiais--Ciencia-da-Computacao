@@ -1,3 +1,4 @@
+package Outros;
 // Figura 4.18: DrawPanel.java
 // Utilizando DrawLine para conectar os cantos de um painel.
 import java.awt.Graphics;

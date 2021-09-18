@@ -1,3 +1,4 @@
+package Outros;
 // Figura 3.13: NameDialog.Java
 // Obtendo a entrada de usuário a partir de um diálogo.
 import javax.swing.JOptionPane;

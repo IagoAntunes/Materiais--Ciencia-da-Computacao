@@ -1,3 +1,4 @@
+package Outros;
 // Figura 3.12: Dialog1.java
 // Usando JOptionPane para exibir múltiplas linhas em uma caixa de diálogo.
 import javax.swing.JOptionPane;
