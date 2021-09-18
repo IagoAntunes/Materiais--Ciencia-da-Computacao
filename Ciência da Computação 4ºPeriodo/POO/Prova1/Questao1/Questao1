@@ -1,3 +1,12 @@
+Questão 1 – 1 pontos - Quais dos identificadores abaixo podem ser usados como nomes de classes, 
+atributos, métodos e variáveis em Java? Quais não podem, e por quê?
+A. contador
+B. 1contador
+C. contador de linhas
+D. Contador
+E. count
+<-------------------------------------------------------------------------------------------->
+
 Classe:         A) contador, D) Contador, E) count
 -contador e count podem ser usadas como nome de classe, mas não é recomendado
 
