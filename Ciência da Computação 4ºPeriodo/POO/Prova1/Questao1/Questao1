@@ -1,9 +1,9 @@
 Classe:         A) contador, D) Contador, E) count
--Contador e count podem ser usadas como nome de classe, mas não é recomendado
+-contador e count podem ser usadas como nome de classe, mas não é recomendado
 
 Atributos:    A) contador, D) Contador, E) count
 
 Métodos:    A) contador, D) Contador, E) count
--Contador pode ser usado como nome de método, mas não é recomendado.
+-contador pode ser usado como nome de método, mas não é recomendado.
 
 Variáveis:    A) contador, C) Contador, E) count
