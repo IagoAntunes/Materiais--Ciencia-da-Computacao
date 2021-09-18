@@ -38,7 +38,10 @@ public class Elevador {
     }
     //Outros
     public String Mensagem(){
-        return ("Andar Atual: "+getAndarAtual()+"\nTotal de Andares: "+getTotalAndares()+"\nCapacidadeElevador: "+getCapacidadeElevador()+"\nPessoas no Elevador: "+getPessoasElevador()+"\n\n\n\n\n");
+        return ("Andar Atual: "+getAndarAtual()
+        +"\nTotal de Andares: "+getTotalAndares()
+        +"\nCapacidadeElevador: "+getCapacidadeElevador()
+        +"\nPessoas no Elevador: "+getPessoasElevador()+"\n\n\n\n\n");
     }
     //Get
     public int getTotalAndares(){
@@ -66,5 +69,4 @@ public class Elevador {
     public void setPessoaElevador(int pessoasElevador){
         this.pessoasElevador = pessoasElevador;
     }
-
 }
