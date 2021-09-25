@@ -20,8 +20,7 @@ public class main {
         System.out.println("Total Andares: ");
         int totalAndares = input.nextInt();
 
-        Elevador elevador = new Elevador(capacidadeElevador, totalAndares);
-        //IAGO ANTUNES FERREIRA 
+        Elevador elevador = new Elevador(capacidadeElevador, totalAndares);//IAGO ANTUNES FERREIRA 
         do{
             System.out.println("[1]Entrar\n[2]Sair\n[3]Subir\n[4]Descer");
             opc = input.nextInt();
@@ -41,7 +40,6 @@ public class main {
                 case 3://IAGO ANTUNES FERREIRA 
                     System.out.println("Num andares que vai subir/OU/numero negativo");
                     andar = input.nextInt();
-                    elevador.Sobe(andar < 0 ? null : andar);
                     if(andar < 0)elevador.Sobe();
                     else elevador.Sobe(andar);
                     break;

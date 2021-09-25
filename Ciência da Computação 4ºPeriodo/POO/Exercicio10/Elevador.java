@@ -6,16 +6,17 @@ public class Elevador {
     public int totalAndares;
     public int capacidadeElevador;
     public int pessoasElevador;
-    //Metodos
+
+    //Construtor
     public Elevador(int capacidadeElevador,int totalAndares){
-        this.capacidadeElevador = capacidadeElevador;
-        this.totalAndares = totalAndares;
+        setTotalAndares(totalAndares);
+        setCapacidadeElevador(capacidadeElevador);
 
         this.andarAtual = 0;
         this.pessoasElevador = 0;
     }
 
-
+    //Metodos
     public void Entra(){//ok
         if(getPessoasElevador() < this.capacidadeElevador){
             this.pessoasElevador ++;
