@@ -29,7 +29,7 @@ public class Elevador {
     
     public void Sai(){//ok
         if(getPessoasElevador() >= 1){
-            this.pessoasElevador --;
+            this.pessoasElevador --;//IAGO ANTUNES FERREIRA 
         }
     }
     public void Sai(int people){//ok
@@ -56,8 +56,8 @@ public class Elevador {
     }
     public void Desce(int floors){//ok
         if(getAndarAtual() >= 1 && getPessoasElevador() > 0){
-            this.andarAtual = floors;
-        }
+            this.andarAtual = floors;//IAGO ANTUNES FERREIRA 
+        }//IAGO ANTUNES FERREIRA 
     }
     //Outros
     public String Mensagem(){
@@ -71,15 +71,15 @@ public class Elevador {
         return this.totalAndares;
     }
     public int getCapacidadeElevador(){
-        return this.capacidadeElevador;
-    }
+        return this.capacidadeElevador;//IAGO ANTUNES FERREIRA 
+    }//IAGO ANTUNES FERREIRA 
     public int getAndarAtual() {
         return andarAtual;
     }
     public int getPessoasElevador() {
         return pessoasElevador;
     }
-    //Set
+    //Set//IAGO ANTUNES FERREIRA 
     public void setTotalAndares(int totalAndares){
         this.totalAndares = totalAndares;
     }

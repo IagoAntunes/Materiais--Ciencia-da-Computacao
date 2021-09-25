@@ -3,16 +3,16 @@ import java.util.Scanner;
 /*
 Modifique a classe celular e altere o jogo para poder jogar Pedra, Papel e Tesoura. 
 Também deverá ser criado um campo Id celular que deverá ser incrementado
-automaticamente
+automaticamente//IAGO ANTUNES FERREIRA 
 e também um método estático mostraQtdeCelulares() que
 retorna quantos celulares estão instanciados!
-*/
+*///IAGO ANTUNES FERREIRA 
 public class main {
     public static void main(String args[]) { 
         Integer opc=0,on = 0;
         Scanner input = new Scanner(System.in);
         celular celular = new celular();
-
+        //IAGO ANTUNES FERREIRA 
         System.out.println("Modelo: ");
         String modelo = input.nextLine();
         System.out.println("Nivel Bateria: ");
@@ -20,7 +20,7 @@ public class main {
         System.out.println("Som: ");
         Integer Som = input.nextInt();
         celular.celular(modelo, nivelBateria, Som);
-        do{
+        do{//IAGO ANTUNES FERREIRA 
             System.out.println("-------------------------------------");
             System.out.println(celular.printar());
             System.out.println("[1]Ligar\n[2]Desligar\n[3]AumentarSom\n[4]DiminuirSom\n[5]Jogar");

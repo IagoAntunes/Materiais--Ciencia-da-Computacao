@@ -6,7 +6,7 @@ public class celular {
     private Boolean ligado;
     private Integer som;
     private Integer idCelular;
-
+    //IAGO ANTUNES FERREIRA 
     public void celular(String modelo, Integer nivelBateria, Integer som){
         setModelo(modelo);
         setNivelBateria(nivelBateria);
@@ -88,7 +88,7 @@ public class celular {
     }
     public String Jogar(Integer escolha){
         if(bateria() == 1 || getLigado() == false){
-            return "Celular desligado...";
+            return "Celular desligado...";//IAGO ANTUNES FERREIRA 
         }else{
             Random gerador = new Random();
             Integer num = gerador.nextInt(100);
@@ -122,7 +122,8 @@ public class celular {
     //Jogo
     public static Integer mostraQtdeCelulares(){
         return idCel
+        //IAGO ANTUNES FERREIRA 
     }
-
+    //IAGO ANTUNES FERREIRA 
 
 }   

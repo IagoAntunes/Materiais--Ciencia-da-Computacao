@@ -7,12 +7,12 @@ public class Moeda {
 
     public Double getDolar() {
         return dolar;
-    }
+    }//IAGO ANTUNES FERREIRA 
     public Double getReal() {
-        return real;
+        return real;//IAGO ANTUNES FERREIRA 
     }
     public static Double conversao(int money,int id ){
-        if(id == 1)
+        if(id == 1)//IAGO ANTUNES FERREIRA 
             return money / dolar;
         else if(id == 2){
             return money * dolar;

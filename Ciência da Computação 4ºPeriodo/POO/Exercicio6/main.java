@@ -54,10 +54,10 @@ public class main {
                 case 3:
                     celular.aumentaSom();
                     break;
-                case 4:
+                case 4://IAGO ANTUNES FERREIRA 
                     celular.diminuiSom();
                     break;
-                case 5:
+                case 5://IAGO ANTUNES FERREIRA 
                     if(on == 1){
                         System.out.println("[0]Par ou [1]Impar");
                         Integer escolha = input.nextInt();

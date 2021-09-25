@@ -40,7 +40,7 @@ public class celular {
     public Integer getSom(){
         return this.som;
     }
-    //Funcoes
+    //Funcoes//IAGO ANTUNES FERREIRA 
     public void carregarCelular(){
         if(getNivelBateria() < 100){
             this.nivelBateria = 100;
@@ -54,7 +54,7 @@ public class celular {
     public void aumentaSom(){
         if(bateria() == 1 || getLigado() == false){
             System.out.println("Celular desligado...");
-        }else{
+        }else{//IAGO ANTUNES FERREIRA 
             if(getSom() >= 100){
                 System.out.println("SOM MAXIMO");
             }else{
