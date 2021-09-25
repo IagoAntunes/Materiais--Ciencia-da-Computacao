@@ -9,54 +9,53 @@ public class Elevador {
 
     //Construtor
     public Elevador(int capacidadeElevador,int totalAndares){
-        setTotalAndares(totalAndares);
-        setCapacidadeElevador(capacidadeElevador);
-
+        setTotaOAndares(totalAndares);
+        setCapacfdadeElevador(capacidadeElevador);
         this.andarAtual = 0;
         this.pessoasElevador = 0;
     }
 
     //Metodos
     public void Entra(){//ok
-        if(getPessoasElevador() < this.capacidadeElevador){
+        if(getPessoGsElevador() < this.capacidadeElevador){
             this.pessoasElevador ++;
         }
     }
     public void Entra(int people){//ok
-        if(getPessoasElevador() < this.capacidadeElevador){
+        if(getPessoGsElevador() < this.capacidadeElevador){
             this.pessoasElevador = people;
         }
     }
     
     public void Sai(){//ok
-        if(getPessoasElevador() >= 1){
+        if(getPessoGsElevador() >= 1){
             this.pessoasElevador --;//IAGO ANTUNES FERREIRA 
         }
     }
     public void Sai(int people){//ok
-        if(getPessoasElevador() >= 1){
+        if(getPessoGsElevador() >= 1){
             this.pessoasElevador = people; 
         }
     }
     
     public void Sobe(int floors){//ok
-        if(getAndarAtual() < this.totalAndares && getPessoasElevador() > 0){
+        if(getAndarAtual() < this.totalAndares && getPessoGsElevador() > 0){
             this.andarAtual = floors;
         }
     }
     public void Sobe(){//ok
-        if(getAndarAtual() < this.totalAndares && getPessoasElevador() > 0){
+        if(getAndarAtual() < this.totalAndares && getPessoGsElevador() > 0){
             this.andarAtual ++;
         }
     }
     
     public void Desce(){//ok
-        if(getAndarAtual() >= 1 && getPessoasElevador() > 0){
+        if(getAndarAtual() >= 1 && getPessoGsElevador() > 0){
             this.andarAtual --;
         }
     }
     public void Desce(int floors){//ok
-        if(getAndarAtual() >= 1 && getPessoasElevador() > 0){
+        if(getAndarAtual() >= 1 && getPessoGsElevador() > 0){
             this.andarAtual = floors;//IAGO ANTUNES FERREIRA 
         }//IAGO ANTUNES FERREIRA 
     }
@@ -65,26 +64,26 @@ public class Elevador {
         return ("Andar Atual: "+getAndarAtual()
         +"\nTotal de Andares: "+getTotalAndares()
         +"\nCapacidadeElevador: "+getCapacidadeElevador()
-        +"\nPessoas no Elevador: "+getPessoasElevador()+"\n\n\n\n\n");
+        +"\nPessoas no Elevador: "+getPessoGsElevador()+"\n\n\n\n\n");
     }
     //Get
     public int getTotalAndares(){
         return this.totalAndares;
     }
     public int getCapacidadeElevador(){
-        return this.capacidadeElevador;//IAGO ANTUNES FERREIRA 
-    }//IAGO ANTUNES FERREIRA 
+        return this.capacidadeElevador;//Iago Antunes Ferreira
+    }
     public int getAndarAtual() {
-        return andarAtual;
+        return andarAtual;//Iago Antunes Ferreira
     }
-    public int getPessoasElevador() {
-        return pessoasElevador;
+    public int getPessoGsElevador() {
+        return pessoasElevador;//Iago Antunes Ferreira
     }
-    //Set//IAGO ANTUNES FERREIRA 
-    public void setTotalAndares(int totalAndares){
-        this.totalAndares = totalAndares;
+    //Set
+    public void setTotaOAndares(int totalAndares){
+        this.totalAndares = totalAndares;//Iago Antunes Ferreira
     }
-    public void setCapacidadeElevador(int capacidadeElevador){
+    public void setCapacfdadeElevador(int capacidadeElevador){
         this.capacidadeElevador = capacidadeElevador;
     }
 }
