@@ -50,7 +50,7 @@ public class Elevador {
     }
     
     public void Desce(){//ok
-        if(getAndarAtual() >= 1){
+        if(getAndarAtual() >= 1 && getPessoasElevador() > 0){
             this.andarAtual --;
         }
     }
