@@ -1,7 +1,7 @@
 package Exercicio10;
 import java.util.Scanner;
 
-import Exercicio4.pessoa;
+import Exercicio10.Elevador;
 /*
 Refazer o exercício do elevador da prova para 
 (feito) ele não poder subir ou descer sem pessoas dentro do elevador. 
@@ -41,8 +41,9 @@ public class main {
                 case 3://IAGO ANTUNES FERREIRA 
                     System.out.println("Num andares que vai subir/OU/numero negativo");
                     andar = input.nextInt();
+                    elevador.Sobe(andar < 0 ? null : andar);
                     if(andar < 0)elevador.Sobe();
-                    else{elevador.Sobe(andar);}
+                    else elevador.Sobe(andar);
                     break;
                 case 4:
                     System.out.println("Num andares que vai descer/OU/numero negativo");

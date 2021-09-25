@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Launch main",
             "request": "launch",
+            "mainClass": "Exercicio11.main",
+            "projectName": "Materiais--Ciencia-da-Computacao_991b4681"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
             "mainClass": "Exercicio10.main",
             "projectName": "Materiais--Ciencia-da-Computacao_991b4681"
         },
