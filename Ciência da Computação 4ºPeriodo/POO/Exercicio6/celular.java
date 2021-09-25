@@ -47,9 +47,6 @@ public class celular {
         }else{
             System.out.println("BATERIA CHEIA");
         }
-
-
-
     }
     public void aumentaSom(){
         if(bateria() == 1 || getLigado() == false){

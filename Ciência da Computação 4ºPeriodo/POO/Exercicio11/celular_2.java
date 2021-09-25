@@ -95,7 +95,7 @@ public class celular_2 {
         }else{
             Random gerador = new Random();
             Integer num = gerador.nextInt(3);
-            this.battery_level -=10;
+            this.battery_level -=5;
             if(choice == num){
                 return "Empate";
             }else if(choice == 0 && num == 1){

@@ -1,24 +1,13 @@
 package Exercicio9;
 
 public class Moeda {
-    
-    public static Double real = 1.00;
+
     public static Double dolar = 5.34;
 
-    public Double getDolar() {
-        return dolar;
-    }//IAGO ANTUNES FERREIRA 
-    public Double getReal() {
-        return real;//IAGO ANTUNES FERREIRA 
+    public static Double realTOdolar(int money){
+        return money / dolar;//Iago Antunes Ferreira
     }
-    public static Double conversao(int money,int id ){
-        if(id == 1)//IAGO ANTUNES FERREIRA 
-            return money / dolar;
-        else if(id == 2){
-            return money * dolar;
-        }
-        return 0.0;
+    public static Double dolarTOreal(int money){
+        return money * dolar;//Iago Antunes Ferreira
     }
-
-
 }
