@@ -8,49 +8,52 @@ public class computador {
     private int tamanhoHD;
     private int tamanhoRAM;
     private int nProcessadores;
-    private int nFabricantes;
-
+    private String Fabricante;
+    public static int RAMestatica = 512;
     private boolean ligado;
 
-    public computador(int tamanhoHD,int tamanhoRAM,int nProcessadores,int nFabricantes){
+    public computador(int tamanhoHD,int tamanhoRAM,int nProcessadores,String Fabricante){
         this.tamanhoHD = tamanhoHD;
         this.tamanhoRAM = tamanhoRAM;
         this.nProcessadores = nProcessadores;
-        this.nFabricantes = nFabricantes;
+        this.Fabricante = Fabricante;
 
         this.ligado = false;
     }
 
     public void ligarComputador(){
-        if(estadoComputador() == false){
+        if(getEstadoComputador() == false){
             this.ligado = true;
         }
     }
     public void desligarComputador(){
-        if(estadoComputador() == true){
+        if(getEstadoComputador() == true){
             this.ligado = false;
         }
     }
 
 
     public void setTamanhoHD(int tamanhoHD) {
-        this.tamanhoHD = tamanhoHD;
+        if(tamanhoHD > 0)
+            this.tamanhoHD = tamanhoHD;
     }
-    public void setnFabricantes(int nFabricantes) {
-        this.nFabricantes = nFabricantes;
+    public void setFabricante(String Fabricante) {
+        this.Fabricante = Fabricante;
     }
     public void setnProcessadores(int nProcessadores) {
-        this.nProcessadores = nProcessadores;
+        if(nProcessadores > 0)
+            this.nProcessadores = nProcessadores;
     }
     public void setTamanhoRAM(int tamanhoRAM) {
-        this.tamanhoRAM = tamanhoRAM;
+        if(tamanhoRAM > 0)
+            this.tamanhoRAM = tamanhoRAM;
     }
 
     public int getTamanhoHD() {
         return tamanhoHD;
     }
-    public int getnFabricantes() {
-        return nFabricantes;
+    public String getFabricante() {
+        return Fabricante;
     }
     public int getnProcessadores() {
         return nProcessadores;
@@ -58,13 +61,14 @@ public class computador {
     public int getTamanhoRAM() {
         return tamanhoRAM;
     }
-    public Boolean estadoComputador(){
+    public Boolean getEstadoComputador(){
         return this.ligado;
     }
 
     @Override
     public String toString() {
-        return "";
+        return "\nComputador: "+Fabricante+"\nLigado: "+ligado+"\nTamanhoHD: "+tamanhoHD+
+        "\nTamanhoRAM: "+tamanhoRAM+"\nNumero de Processadores: "+nProcessadores;
     }
 
 
