@@ -1,7 +1,6 @@
 package Exercicio13;
 import java.util.Scanner;
 import Exercicio13.computador;
-
 /*
  (feito)Crie uma classe Computador que possua os parâmetros tamanho da HD, tamanho da
  (feito)RAM, número de processadores e fabricante. 
@@ -21,13 +20,10 @@ import Exercicio13.computador;
  
   Se conseguir fazer o cadastro por menu é muito bom. Boa sorte.
  */
-
-
-
 public class TestaComputador {
     public static void main(String args[]) { 
         Scanner input = new Scanner(System.in);
-
+        //Iago Antunes Ferreira
         computador[] computador = new computador[3];
 
         for(int i =0;i<computador.length;i++){

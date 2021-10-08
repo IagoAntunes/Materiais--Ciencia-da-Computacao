@@ -32,7 +32,6 @@ public class computador {
         }
     }
 
-
     public void setTamanhoHD(int tamanhoHD) {
         if(tamanhoHD > 0)
             this.tamanhoHD = tamanhoHD;
@@ -70,6 +69,4 @@ public class computador {
         return "\nComputador: "+Fabricante+"\nLigado: "+ligado+"\nTamanhoHD: "+tamanhoHD+
         "\nTamanhoRAM: "+tamanhoRAM+"\nNumero de Processadores: "+nProcessadores;
     }
-
-
 }
