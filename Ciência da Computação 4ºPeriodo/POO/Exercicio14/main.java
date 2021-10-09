@@ -14,30 +14,28 @@ public class main {
     public static void main(String args[]) { 
         Scanner input = new Scanner(System.in);
 
-        ArrayList<String> valor = new ArrayList<>();
+        ArrayList<String> contatinhos = new ArrayList<>();
         int opc;
         do{
-            System.out.println("Opcoes");
+            System.out.println("\n\nOpcoes:");
             opc = input.nextInt();
             switch(opc){
 
-                case 1:
+                case 1://Inserir Contatos
                     System.out.println("Adicionar Contato:");
-                    String nome = input.next();
-                    valor.add(nome);
+                    contatinhos.add(input.next());
                     break;
-                case 2:
-                    System.out.println("Remover contato;");
-                    String nomeRemover = input.next();
-                    valor.remove(nomeRemover);
+                case 2://Remover Contatos
+                    System.out.println("Remover contato:");
+                    contatinhos.remove(input.next());
                     break; 
-                case 3:
+                case 3://Mostrar quantidade de contatos
                     System.out.println("Mostrar qtd contatos:");
-                    System.out.println(valor.size());
+                    System.out.println(contatinhos.size());
                     break;
-                case 4:
+                case 4://Listar todos os contatos
                     System.out.println("Todos Contatos:");
-                    for(String x : valor){
+                    for(String x : contatinhos){
                         System.out.println(x);
                     }
                 break;
@@ -46,9 +44,5 @@ public class main {
                 
             }
         }while(opc != 9);
-
-
-
-
     }
 }
