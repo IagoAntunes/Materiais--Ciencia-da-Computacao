@@ -5,7 +5,7 @@ public class Contato {
     private String nome;
     private int telefone;
     private String cidade;
-    public static int idContador=0;
+    public static int idContador;
     private boolean ativo;
 
     public Contato(String nome,int telefone,String cidade){
@@ -41,7 +41,7 @@ public class Contato {
     public String getCidade() {
         return cidade;
     }
-    public int getIdContador() {
+    public int getidContador() {
         return idContador;
     }
     public String getNome() {

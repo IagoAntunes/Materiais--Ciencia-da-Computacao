@@ -34,7 +34,7 @@ public class main {
                     System.out.println(contatinhos.size());
                     break;
                 case 4://Listar todos os contatos
-                    System.out.println("Todos Contatos:");
+                    System.out.println("Mostrando todos Contatos:");
                     for(String x : contatinhos){
                         System.out.println(x);
                     }

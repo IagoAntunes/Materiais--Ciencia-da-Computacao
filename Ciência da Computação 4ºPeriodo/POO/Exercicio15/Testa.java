@@ -102,7 +102,8 @@ public class Testa {
                     System.out.println("Listar por Cidade:");
                     String buscaCidade = input.next();
                     for(int j3=0;j3<i;j3++){
-                        if(contatinhos2[j3].getAtivo() == true && contatinhos2[j3].getCidade().equals(buscaCidade) && contatinhos.contains(contatinhos2[j3])){
+                        if(contatinhos2[j3].getAtivo() == true && contatinhos2[j3].getCidade().equals(buscaCidade) 
+                        && contatinhos.contains(contatinhos2[j3])){
                             System.out.println(contatinhos2[j3].toString());
                         }
                     }
@@ -110,11 +111,16 @@ public class Testa {
 
                 case 9://Limpar agenda
                     contatinhos.clear();
+                    limpar(contatinhos2);
+                    System.out.println(contatinhos2.length);
                     break;
             }
-
-        }while(opc != 0);
+        }while(opc != 0); 
     }
-    
 
+    public static void limpar(Contato[] contatinhos2){//Limpar caracteristicas usuarios
+        for(int i =0;i<contatinhos2.length;i++){
+            contatinhos2[i] = null;
+        }
+    }
 }
