@@ -62,7 +62,4 @@ public class Contato {
     public void bloquearContato(){
         this.ativo = false;
     }
-    public void limpar(){
-        for()
-    }
 }
