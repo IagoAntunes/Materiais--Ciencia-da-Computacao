@@ -16,14 +16,12 @@ public class Contato {
 
         idContador ++;
     }
-
     @Override
     public String toString() {
         // TODO Auto-generated method stub
         return "\nNome:"+getNome() + "\nTelefone:"+getTelefone() + "\nCidade:"+getCidade();
     }
-
-
+    //Iago Antunes Ferreira
     public void setNome(String nome) {
         this.nome = nome;
     }

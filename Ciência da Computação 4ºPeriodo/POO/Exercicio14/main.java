@@ -13,9 +13,9 @@ listar todos contatos
 public class main {
     public static void main(String args[]) { 
         Scanner input = new Scanner(System.in);
-
+        //Iago Antunes Ferreira
         ArrayList<String> contatinhos = new ArrayList<>();
-        int opc;
+        int opc=0;
         do{
             System.out.println("\n\nOpcoes:");
             opc = input.nextInt();
@@ -30,7 +30,7 @@ public class main {
                     contatinhos.remove(input.next());
                     break; 
                 case 3://Mostrar quantidade de contatos
-                    System.out.println("Mostrar qtd contatos:");
+                    System.out.println("Quantidade de contatos:");
                     System.out.println(contatinhos.size());
                     break;
                 case 4://Listar todos os contatos
@@ -39,9 +39,6 @@ public class main {
                         System.out.println(x);
                     }
                 break;
-                case 9:
-                    break;
-                
             }
         }while(opc != 9);
     }
