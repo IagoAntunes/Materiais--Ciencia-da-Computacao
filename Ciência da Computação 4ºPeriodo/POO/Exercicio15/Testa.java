@@ -17,6 +17,7 @@ public class Testa {
         Scanner input = new Scanner(System.in);
         int i =0;
         ArrayList<Integer> contatinhos = new ArrayList<>();
+        ArrayList<contatinhos> contatinhos3 = new ArrayList<>();
         Contato[] contatinhos2 = new Contato[10];
         int opc = 0;
         do{
@@ -42,7 +43,7 @@ public class Testa {
                 
                 case 3://Listar
                     for(int j=0;j<i;j++)
-                        System.out.println(contatinhos2[j].toString());
+                        if(contatinhos2[j].getAtivo()){System.out.println(contatinhos2[j].toString());}
                     break;
                 
                 case 4://Listar Inativos
@@ -59,20 +60,37 @@ public class Testa {
                     break;
 
                 case 6://Bloquear Contato
+                    System.out.println("ID contato:");
+                    contatinhos2[input.nextInt()].bloquearContato();
                     break;
                 
                 case 7://Buscar por nome
+                    System.out.println("Nome:");
+                    String buscaNome  = input.next();
+                    for(int j2 =0;j2<i;j2++){
+                        if(contatinhos2[j2].getNome().equals(buscaNome)){
+                            System.out.println(contatinhos2[j2].toString());
+                        }
+                    }
                     break;
                 
                 case 8://Listar por cidade
+                    System.out.println("Listar por Cidade:");
+                    String buscaCidade = input.next();
+                    for(int j3=0;j3<i;j3++){
+                        if(contatinhos2[j3].getAtivo() == false && contatinhos2[j3].getCidade().equals(buscaCidade)){
+                            System.out.println(contatinhos2[j3].toString());
+                        }
+                    }
                     break;
 
                 case 9://Limpar agenda
+                    contatinhos.clear();
+                    limpar(contatinhos2);
                     break;
             }
 
         }while(opc != 9);
-
-
     }
+
 }
