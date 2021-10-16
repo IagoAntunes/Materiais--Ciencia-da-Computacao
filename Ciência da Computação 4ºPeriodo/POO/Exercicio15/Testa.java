@@ -17,7 +17,7 @@ public class Testa {
         Scanner input = new Scanner(System.in);
 
         ArrayList<Contato> contatinhos = new ArrayList<>();//Aqui é a agenda com todos contatos
-        Contato[] contatinhos2 = new Contato[100];//Aqui guarda os contatos de forma separada
+        Contato[] contatinhos2 = new Contato[100];//Aqui guarda os contatos de forma separadawda
         int opc = 0, i = 0;
         do{//Iago Antunes Ferreira
             System.out.println("\nOpções");
