@@ -39,7 +39,7 @@ public class ComposicaoUIT {
         
         for(Pessoa x : gol.getPassageiros()){
             if(x.getNome().equals(nome))
-            gol.removePassageiro(x);
+                gol.removePassageiro(x);
         }
         
         System.out.println("Após remover");

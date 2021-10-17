@@ -5,9 +5,16 @@ import java.util.Set;
 public class aluno {
     
     private String nome;
-    private String idade;
+    private int idade;
+
     private String sexo;
     private Nota Nota;
+
+    public aluno(String nome, int idade,String sexo) {
+        this.nome = nome;
+        this.idade = idade;
+        this.sexo = sexo;
+    }
 
  
     public void setIdade(String idade) {
@@ -36,6 +43,11 @@ public class aluno {
     }
 
 
+
+    @Override
+    public String toString() {
+        return "\nNome:"+nome+"\nIdade:"+idade+"\nSexo:"+sexo+"Nota:"+getNota().getNota();
+    }
 
 
 }
