@@ -1,28 +1,27 @@
 
-
 CREATE TABLE ambulatorio(
-nroa INT PRIMARY KEY,
-andar NUMERIC(3) NOT NULL,
-capacidade SMALLINT
+  nroa INT PRIMARY KEY,
+  andar NUMERIC(3) NOT NULL,
+  capacidade SMALLINT
 );
 
 CREATE TABLE Medicos(
-codm INT PRIMARY KEY,
-nome VARCHAR(40) NOT NULL,
-idade SMALLINT NOT NULL,
-especialidade CHAR(20),
-CPF NUMERIC(11) UNIQUE,
-cidade VARCHAR(30) ,
-nroa INT
+  codm INT PRIMARY KEY,
+  nome VARCHAR(40) NOT NULL,
+  idade SMALLINT NOT NULL,
+  especialidade CHAR(20),
+  CPF NUMERIC(11) UNIQUE,
+  cidade VARCHAR(30) ,
+  nroa INT
 );
 
 CREATE TABLE Pacientes(
-codp INT PRIMARY KEY,
-nome VARCHAR(40) NOT NULL,
-idade SMALLINT NOT NULL,
-cidade CHAR(30),
-CPF NUMERIC(11) UNIQUE,
-doenca VARCHAR(40) NOT NULL
+  codp INT PRIMARY KEY,
+  nome VARCHAR(40) NOT NULL,
+  idade SMALLINT NOT NULL,
+  cidade CHAR(30),
+  CPF NUMERIC(11) UNIQUE,
+  doenca VARCHAR(40) NOT NULL
 );
 
 CREATE TABLE Funcionarios(
