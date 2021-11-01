@@ -1,5 +1,5 @@
 
-package Aula29_10.teste2;
+package teste2;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
