@@ -8,6 +8,34 @@
             "type": "java",
             "name": "Launch main",
             "request": "launch",
+            "mainClass": "Exercicio19.main",
+            "projectName": "Materiais--Ciencia-da-Computacao_bcc0f547"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "Exercicio21.main",
+            "projectName": "Materiais--Ciencia-da-Computacao_bcc0f547"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "Exercicio18.main",
+            "projectName": "Materiais--Ciencia-da-Computacao_bcc0f547"
+        },
+        {
+            "type": "java",
+            "name": "Launch Testa",
+            "request": "launch",
+            "mainClass": "Exercicio15.Testa",
+            "projectName": "Materiais--Ciencia-da-Computacao_bcc0f547"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
             "mainClass": "Exercicio23.main",
             "projectName": "Materiais--Ciencia-da-Computacao_991b4681"
         },
