@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package teste3;
+package Exercicio19.teste3;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
