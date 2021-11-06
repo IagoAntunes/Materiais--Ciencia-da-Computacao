@@ -19,7 +19,7 @@ Bom trabalho.
 */
 
 //Iago Antunes Ferreira
-package teste4;
+package Exercicio19.teste4;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
