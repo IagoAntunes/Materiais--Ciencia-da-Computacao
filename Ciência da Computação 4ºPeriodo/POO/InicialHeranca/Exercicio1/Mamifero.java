@@ -15,7 +15,14 @@ public class mamifero extends animal {
         return alimento;
     }
     
-
+    public String dadosMamifero(){
+        return "Nome:"+getNome()+
+        "Comprimento:"+getnPatas()+
+        "Cor:"+getCor()+
+        "Ambiente:"+getAmbiente()+
+        "vMedia:"+getvMedia()+
+        "Caracteristica:"+getCaracteristicas();
+    }
 
 
 }
