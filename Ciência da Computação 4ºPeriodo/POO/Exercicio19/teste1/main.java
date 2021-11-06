@@ -1,4 +1,4 @@
-package teste1;
+package Exercicio19.teste1;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
