@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Launch main",
             "request": "launch",
+            "mainClass": "InicialHeranca.Exercicio1.main",
+            "projectName": "Materiais--Ciencia-da-Computacao_bcc0f547"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
             "mainClass": "Exercicio19.main",
             "projectName": "Materiais--Ciencia-da-Computacao_bcc0f547"
         },
