@@ -33,7 +33,7 @@ ligar
 abastecer
 etc....
 */
-class Exercicio5 {
+class Carro {
     public static void main(String args[]) { 
         Integer opc=0;
         Scanner input = new Scanner(System.in);
