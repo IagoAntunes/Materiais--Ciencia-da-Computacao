@@ -1,14 +1,22 @@
-public class mamifero extends animal {
-    
-    private String alimento;
+package InicialHeranca.Exercicio1;
 
-    public mamifero(String nome, float comprimento, Integer nPatas, String cor, String ambiente, float vMedia) {
+public class Mamifero extends Animal {
+
+    private String alimento = "Nao Informado";//Atributo alimento
+
+    public Mamifero(String nome, float comprimento, Integer nPatas, String cor, String ambiente, Double vMedia,String alimento) {
         super(nome, comprimento, nPatas, cor, ambiente, vMedia);
-        this.caracteristicas = caracteristicas;
+        this.alimento = alimento;
     }
-
+    public Mamifero(String nome, float comprimento, Integer nPatas, String cor, String ambiente, Double vMedia) {
+        super(nome, comprimento, nPatas, cor, ambiente, vMedia);
+    }
+    @Override
+    public String emitirSom(){
+        return getSom();
+    }
     public void setAlimento(String Alimento) {
-        this.Alimento = Alimento;
+        this.alimento = Alimento;
     }
 
     public String getAlimento() {
@@ -16,13 +24,12 @@ public class mamifero extends animal {
     }
     
     public String dadosMamifero(){
-        return "Nome:"+getNome()+
-        "Comprimento:"+getnPatas()+
-        "Cor:"+getCor()+
-        "Ambiente:"+getAmbiente()+
-        "vMedia:"+getvMedia()+
-        "Caracteristica:"+getCaracteristicas();
+        return "\nNome: "+getNome()+
+        "\nComprimento: "+getnPatas()+
+        "\nCor: "+getCor()+
+        "\nAmbiente: "+getAmbiente()+
+        "\nvMedia: "+getvMedia()+
+        "\nnPatas: "+getnPatas()+
+        "\nAlimento: "+getAlimento();
     }
-
-
 }
