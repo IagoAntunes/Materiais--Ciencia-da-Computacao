@@ -1,14 +1,17 @@
 package InicialHeranca.Exercicio1;
 
-public class animais {
+import java.util.Set;
+
+public class Animal {
     private String nome;
     private float comprimento;
     private Integer nPatas;
     private String cor;
     private String ambiente;
-    private float vMedia;
+    private Double vMedia;
+    private String som;
   
-    public animais(String nome, float comprimento, Integer nPatas, String cor, String ambiente, float vMedia) {
+    public Animal(String nome, float comprimento, Integer nPatas, String cor, String ambiente, Double vMedia) {
       this.nome = nome;
       this.comprimento = comprimento;
       this.nPatas = nPatas;
@@ -16,7 +19,17 @@ public class animais {
       this.ambiente = ambiente;
       this.vMedia = vMedia;
     }
-  
+    
+    public String emitirSom(){
+      return getSom();
+    }
+    public String getSom() {
+        return som;
+    }
+    public void setSom(String som){
+      this.som = som;
+    }
+
     public String getAmbiente() {
       return ambiente;
     }
@@ -32,7 +45,7 @@ public class animais {
     public Integer getnPatas() {
       return nPatas;
     }
-    public float getvMedia() {
+    public Double getvMedia() {
       return vMedia;
     }
   
@@ -51,17 +64,17 @@ public class animais {
     public void setnPatas(Integer nPatas) {
       this.nPatas = nPatas;
     }
-    public void setvMedia(float vMedia) {
+    public void setvMedia(Double vMedia) {
       this.vMedia = vMedia;
     }
-  
+
     @Override
     public String toString() {
-      return "\nNome:"+getNome()+
-      "\nComprimento:"+getComprimento()+
-      "\nNumero de Patas:"+getnPatas()+
-      "\nCor:"+getCor()+
-      "\nAmbiente:"+getAmbiente()+
-      "\nVelocidade Media:"+getvMedia();
+      return "\nNome: "+getNome()+
+      "\nComprimento: "+getComprimento()+
+      "\nNumero de Patas: "+getnPatas()+
+      "\nCor: "+getCor()+
+      "\nAmbiente: "+getAmbiente()+
+      "\nVelocidade Media: "+getvMedia();
     }
 }
