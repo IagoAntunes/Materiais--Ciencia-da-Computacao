@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "main",
+            "projectName": "Materiais--Ciencia-da-Computacao_bcc0f547"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "ExercicioHerançaPolimorfismo.main",
+            "projectName": "Materiais--Ciencia-da-Computacao_bcc0f547"
+        },
+        {
+            "type": "java",
             "name": "Launch exercicio1",
             "request": "launch",
             "mainClass": "Exercicio01.exercicio1",

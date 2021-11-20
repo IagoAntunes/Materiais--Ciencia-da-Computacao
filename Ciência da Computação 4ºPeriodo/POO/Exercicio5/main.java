@@ -1,6 +1,5 @@
 package Exercicio5;
 import java.util.Scanner;
-import javax.swing.JOptionPane;
 /*
 (FEITO)Criar um projeto de  carro (novamente), onde, quando
 acelerar o carro, caso ele entre na reserva
