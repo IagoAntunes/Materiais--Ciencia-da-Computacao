@@ -175,3 +175,39 @@ select nome,especialidade from medicos where nome LIKE 'o%'
 14-
 select codp,nome from pacientes where idade > 25 and  doenca IN ('tendinite', 'fratura', 'gripe','sarampo')
 
+/*EXERCICIO 04*/
+1-
+SELECT m.nome,m.cpf FROM medicos as m
+JOIN pacientes on pacientes.CPF = m.CPF;
+2-
+SELECT f.codf,f.nome,medicos.codm,medicos.nome FROM funcionarios as f
+JOIN medicos on medicos.cidade = f.cidade;
+3-
+SELECT p.codp,p.nome FROM pacientes as p
+JOIN consultas on consultas.codf = p.codp and consultas.hora > "14:00";
+4-
+SELECT a.nroa,a.andar FROM ambulatorio as a
+JOIN medicos on medicos.nroa = a.nroa and medicos.especialidade = "Ortopedia";
+5-
+SELECT p.nome,p.CPF FROM pacientes as p
+JOIN consultas on consultas.data > '2018/06/14' and consultas.data < '2018/06/16';
+6-
+SELECT m.nome,m.idade FROM medicos as m
+JOIN consultas on consultas.codf = 2;
+7-
+SELECT m.codm,m.nome,consultas.data,m.nroa FROM medicos as m
+JOIN ambulatorio on m.nroa = 2
+JOIN consultas on consultas.data = '2018/06/14';
+8-
+SELECT p.nome,p.cpf,p.idade FROM pacientes as p
+JOIN consultas on consultas.codm  in (1,4) and consultas.data < "2018/06/16";
+9-
+SELECT f.nome,f.salario from funcionarios as f
+WHERE f.cidade like "Florianopolis" and f.salario > 1100;
+10-
+SELECT * FROM ambulatorio a
+JOIN medicos on medicos.nroa = a.nroa;
+11-
+SELECT m.cpf,m.nome FROM medicos as m
+JOIN consultas on consultas.codm = m.codm
+GROUP BY m.nome;
