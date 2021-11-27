@@ -13,6 +13,7 @@
   - ### [1ºPeriodo](https://github.com/IagoAntunes/Materiais--Ciencia-da-Computacao/tree/master/Ci%C3%AAncia%20da%20Computa%C3%A7%C3%A3o%201%C2%BAPeriodo)
   - ### [2ºPeriodo](https://github.com/IagoAntunes/Materiais--Ciencia-da-Computacao/tree/master/Ci%C3%AAncia%20da%20Computa%C3%A7%C3%A3o%202%C2%BAPeriodo)
   - ### [3ºPeriodo](https://github.com/IagoAntunes/Materiais--Ciencia-da-Computacao/tree/master/Ci%C3%AAncia%20da%20Computa%C3%A7%C3%A3o%203%C2%BAPeriodo)
+  - ### [4ºPeriodo](https://github.com/IagoAntunes/Materiais--Ciencia-da-Computacao/tree/master/Ci%C3%AAncia%20da%20Computa%C3%A7%C3%A3o%204%C2%BAPeriodo)
 
 
 ## Rede Social:
