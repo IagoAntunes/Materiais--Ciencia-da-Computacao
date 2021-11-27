@@ -8,6 +8,27 @@
             "type": "java",
             "name": "Launch main",
             "request": "launch",
+            "mainClass": "ClassesMetodosAbstratos.Exercicio01.main",
+            "projectName": "Materiais--Ciencia-da-Computacao_bcc0f547"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "ClassesMetodosAbstratos.Exercicio02.main",
+            "projectName": "Materiais--Ciencia-da-Computacao_bcc0f547"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "ClassesMetodosAbstratos.main",
+            "projectName": "Materiais--Ciencia-da-Computacao_bcc0f547"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
             "mainClass": "main",
             "projectName": "Materiais--Ciencia-da-Computacao_bcc0f547"
         },
