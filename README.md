@@ -6,6 +6,7 @@
 ##  Linguagens:
   - ## C
   - ## C++
+  - ## Java
 ***
 
 ## Periodo:
