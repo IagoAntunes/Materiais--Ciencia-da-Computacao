@@ -211,3 +211,37 @@ JOIN medicos on medicos.nroa = a.nroa;
 SELECT m.cpf,m.nome FROM medicos as m
 JOIN consultas on consultas.codm = m.codm
 GROUP BY m.nome;
+/* EXERCICIO 05 */
+
+1-
+select nome,cpf from medicos
+where cpf in (select cpf from pacientes);
+2-
+select codp,nome,c.hora from pacientes
+join consultas as c on c.codf = codp and c.hora in (select hora from consultas where hora > "14:00");
+3-
+select nome,idade from medicos as m
+join consultas as c on c.codm = m.codm and 
+c.codf in (select codp from pacientes where codp = 3);
+4-
+select * from ambulatorio;
+select nroa,andar from ambulatorio
+where nroa NOT IN (select nroa from medicos);
+5-
+select nome,cpf,idade from pacientes
+join consultas as c on day(c.data )in (select day(data) from consultas where day(data) < 16);
+/*Exercicio 06*/
+
+1-
+select nroa,andar from ambulatorio
+where capacidade > ANY (select min(capacidade) from ambulatorio);
+2-
+select nome,idade from medicos as m
+join consultas as c on c.codm = m.codm and 
+c.codf = ALL (select codp from pacientes where codp = 3);
+3-
+select nome,cpf,c.data from pacientes
+JOIN consultas as c on c.data < ANY (select c.data from consultas where c.data = "2018/06/12")
+4-
+select nome,cpf from medicos as m
+join ambulatorio as a on a.nroa != m.nroa and a.capacidade > ALL (select capacidade from ambulatorio where andar = 2);

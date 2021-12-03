@@ -5,7 +5,7 @@ public class main {
     public static void main(String args[]) {
         Scanner input = new Scanner(System.in);
         //IAGO ANTUNES FERREIRA
-        ArrayList<Empregado> empregados = new ArrayList<>();
+        ArrayList<Empregado> empregados = new ArrayList<Empregado>();
         ArrayList<Fornecedor> fornecedores = new ArrayList<Fornecedor>();
         int opc = 0;
         do{
