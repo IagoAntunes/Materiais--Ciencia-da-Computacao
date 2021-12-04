@@ -245,3 +245,12 @@ JOIN consultas as c on c.data < ANY (select c.data from consultas where c.data =
 4-
 select nome,cpf from medicos as m
 join ambulatorio as a on a.nroa != m.nroa and a.capacidade > ALL (select capacidade from ambulatorio where andar = 2);
+
+/*Exercicio 07*/
+1-
+select nome,cpf from medicos as m
+where exists (select nome,cpf from pacientes where cpf = m.cpf);
+2-
+select nome,idade from medicos 
+where exists (select codf,codm from consultas where codf = 2);
+3-
