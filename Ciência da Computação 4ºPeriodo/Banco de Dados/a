@@ -1,0 +1,52 @@
+use provafinaldois;
+CREATE TABLE Cliente(
+  CPF INTEGER PRIMARY KEY,
+  Nome VARCHAR(50) NOT NULL,
+  Telefone VARCHAR(50)
+);
+
+CREATE TABLE Carro(
+  Cod_Carro INTEGER PRIMARY KEY,
+  Cliente_CPF INTEGER ,
+  Placa VARCHAR(50),
+  AnoFabricacao INTEGER
+);
+
+CREATE TABLE Orcamento(
+  Cod_Orcamento INTEGER PRIMARY KEY,
+  Carro_Cod_Orcamento INTEGER,
+  DataOrcamento DATETIME
+);
+
+CREATE TABLE Servico(
+  Cod_Servico INTEGER PRIMARY KEY,
+  Dsc_Servico VARCHAR(50) NOT NULL,
+  Val_Servico NUMERIC
+);
+
+INSERT INTO Cliente VALUES
+(123456789,"Joao da Silva","99999999"),
+(673524523,"Maria Pereira","22222222"),
+(355235346,"Lucas emanuel","11111111");
+
+INSERT INTO Carro VALUES
+(1,22222222,"ABC123",2018),
+(2,11111111,"DEA678",2013),
+(3,99999999,"MNA222",2021);
+
+INSERT INTO Orcamento VALUES
+(1,2,'2019/08/11'),
+(2,2,'2017/06/01'),
+(3,3,'2022/01/23');
+
+INSERT INTO Servico VALUES
+(1,"Oleo",900),
+(2,"Manutencao",1600),
+(3,"Limpeza",300);
+
+
+select * from Servico;
+
+
+
+
