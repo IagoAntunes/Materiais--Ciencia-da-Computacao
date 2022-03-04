@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.annotation.ElementType;
 import java.util.Random;
 public class Exercicio04 {
     public static void main(String args[]) {
@@ -44,15 +45,26 @@ public class Exercicio04 {
     public static void Aleatorio(int[] vetor){
         Random gerador = new Random();
         Scanner input = new Scanner(System.in);
+        int pos;
+        boolean cond = true;
         for(int i =0;i<vetor.length;i++){
-            int pos = gerador.nextInt(vetor.length-1);
-            if(vetor[pos] == null){
-
+            cond = true;
+            pos = gerador.nextInt(vetor.length);
+            //System.out.println("POS:"+pos);
+            if(vetor[pos] == 0){
+                vetor[pos] = input.nextInt();
+            }else{
+                while(cond){
+                    pos = gerador.nextInt(vetor.length);
+                    //System.out.println("POS2:"+pos);
+                    if(vetor[pos] == 0){
+                        //System.out.println("vet[pos]"+vetor[pos]);
+                        vetor[pos] = input.nextInt();
+                        cond = false;
+                    }
+                }
+                //System.out.println("Saiu");
             }
-            vetor[pos] = input.nextInt();
         }
     }
-
-
-
 }
