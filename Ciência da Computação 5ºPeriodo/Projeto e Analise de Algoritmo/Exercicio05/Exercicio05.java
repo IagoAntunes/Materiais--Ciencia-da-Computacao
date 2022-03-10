@@ -7,8 +7,8 @@ public class Exercicio05 {
         int[] vetorT2 = new int[500];
         int[] vetorT3 = new int[5000];
 
-        //Crescente(vetorT1, vetorT2, vetorT3);
-        //LimparVetor(vetorT1, vetorT2, vetorT3);
+        Crescente(vetorT1, vetorT2, vetorT3);
+        LimparVetor(vetorT1, vetorT2, vetorT3);
         DeCrescente(vetorT1, vetorT2, vetorT3);
         LimparVetor(vetorT1, vetorT2, vetorT3);
         Aleatorio(vetorT1, vetorT2, vetorT3);
@@ -216,7 +216,7 @@ public class Exercicio05 {
         int inicio = 0;         //Posição inicial do vetor.
         int meio = 0;          //Posição do meio do vetor.
         int fim = numeros.length - 1;  //Posição final do vetor.
-        System.out.println("\tPesquisar numero");
+        System.out.println("\tPesquisa Binaria");
         long startTime = System.nanoTime();
         while(inicio <= fim) {
           meio = (fim + inicio) / 2; 
