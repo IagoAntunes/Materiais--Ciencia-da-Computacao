@@ -2,7 +2,6 @@
 #letra apareceu no texto. Crie seu próprio arquivo de teste
 
 
-
 dic = {}
 junta = ""
 file = open('Ciencia de Dados\\ListaEtapa1\\arq', 'r')
