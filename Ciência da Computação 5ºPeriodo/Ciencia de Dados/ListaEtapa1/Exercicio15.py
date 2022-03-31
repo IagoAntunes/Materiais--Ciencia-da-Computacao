@@ -1,4 +1,4 @@
-#Faça um programa que leia um número n e em seguida leia n inteiros. Em seguida crie 
+#15-Faça um programa que leia um número n e em seguida leia n inteiros. Em seguida crie 
 #uma lista com o quadrado dos elementos da lista original utilizando compreensão de lista.
 
 

@@ -1,4 +1,4 @@
-#Leia um texto de um arquivo e crie um dicionário que conte o número de vezes que cada 
+#16-Leia um texto de um arquivo e crie um dicionário que conte o número de vezes que cada 
 #letra apareceu no texto. Crie seu próprio arquivo de teste
 
 

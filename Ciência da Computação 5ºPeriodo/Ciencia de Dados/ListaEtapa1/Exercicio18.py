@@ -1,4 +1,4 @@
-
+#18
 
 
 dic = {}
@@ -22,8 +22,5 @@ print(listnomes)#C
 
 for palavra in listnomes:
     print(palavra,":",dic[palavra])
-
-
-
 
 

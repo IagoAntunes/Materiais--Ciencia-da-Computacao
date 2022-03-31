@@ -1,4 +1,4 @@
-#– Faça um programa que leia um número n e em seguida leia n inteiros. Crie uma lista 
+#13-Faça um programa que leia um número n e em seguida leia n inteiros. Crie uma lista 
 #ordenada sem elementos repetidos a partir da lista original e mostre a lista original e a lista 
 #ordenada sem elementos repetidos na tel
 
