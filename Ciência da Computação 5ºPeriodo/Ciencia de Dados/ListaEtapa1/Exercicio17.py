@@ -1,4 +1,4 @@
-
+#17
 import matplotlib.pyplot as pyl
 
 nomes = list(dic.keys())
