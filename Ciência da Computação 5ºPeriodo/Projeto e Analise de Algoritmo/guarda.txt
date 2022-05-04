@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <string.h>
+typedef struct Pessoa{
+	int ID;
+	char name[100];
+	int age;
+}Pessoa;
+
+
+
+int main()
+{
+   FILE* out;
+   FILE* in;
+   FILE* size;
+   
+   Pessoa p1 = {
+   		1,
+   		"Pedro",
+   		17
+   };
+   Pessoa p2;
+   
+   //WRITE
+   out = fopen("ARQUIVO.BIN","ab");
+   if(out == NULL){
+   	return 0;
+   }
+   fwrite(&p1,sizeof(Pessoa),1,out); 
+   fclose(out);  
+   
+   //READ
+   in = fopen("ARQUIVO.BIN","rb");
+   if(in == NULL){
+   		printf("OPA");
+   		return 3;
+   }
+   
+	fread(&p2,sizeof(Pessoa),1,in);
+	fclose(in);
+   	
+   	printf("Lidos do Arq Binario: %d %d",p1.ID,p1.name);
+   	
+    
+    return 0;
+}
