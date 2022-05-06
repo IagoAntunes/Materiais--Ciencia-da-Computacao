@@ -1,0 +1,95 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <string.h>
+
+typedef struct{
+    char name[30];
+    int age;
+    int test;
+}Pessoa;
+
+
+int main(void)
+{
+    FILE *ptarq;
+    int opc = 1;
+
+    ptarq = fopen ("apagaisso.bin", "a"); //Se não abriu, cria.
+
+    if (ptarq!=NULL)
+        printf ("\nAberto\n");
+    else
+    {
+        printf ("\nErro");
+        system ("pause");
+        exit (0);
+    }
+    Pessoa pessoa;
+    int i;
+    while(opc == 1){
+        printf("Nome:");
+        scanf("%s",&pessoa.name);
+
+
+        printf("Idade:");
+        scanf("%d",&pessoa.age);
+
+        printf("Test:");
+        scanf("%d",&pessoa.test);
+
+        fwrite (&pessoa, sizeof(pessoa), 1, ptarq);
+
+        printf("Continuar...");
+        scanf("%i",&opc);
+    }
+    fclose (ptarq);
+
+
+    Pessoa pessoaTeste;
+
+    //ponteiro para o arquivo
+    FILE *ptrArq;
+
+    //abertura do arquivo
+    ptrArq = fopen("apagaisso.bin","rb");
+
+    //testando se o arquivo foi aberto com sucesso
+    if (ptrArq != NULL)
+     printf ("\n\nArquivo binario.bin foi aberto com sucesso\n\n");
+    else
+    {
+    printf ("\n\nERRO: O arquivo binario.bin não foi aberto e criado\n");
+    system ("pause");
+    exit (1);
+    }
+
+    //leitura do arquivo binário
+    //Sintaxe: fread(&variavel, num_bytes, num_registros, arquivo);
+
+    //retorna o conteúdo contido em uma ocorrência do tamanho da variável ch.
+    fread(&pessoaTeste, sizeof(pessoaTeste),5,ptrArq);
+
+
+
+    printf("Vetor de caracteres: \n");
+
+    printf(pessoaTeste.name);
+
+
+    //fechando o arquivo
+    fclose(ptrArq);
+
+    printf("\n");
+    system ("pause");
+    return(0);
+
+
+
+
+
+
+    system ("pause");//pausa na tela, somente para Windows
+    return(0);
+}
+
