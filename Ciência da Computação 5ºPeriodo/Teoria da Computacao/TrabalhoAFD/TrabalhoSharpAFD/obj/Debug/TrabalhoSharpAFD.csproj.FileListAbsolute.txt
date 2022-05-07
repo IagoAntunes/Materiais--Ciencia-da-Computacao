@@ -1,0 +1,8 @@
+C:\Users\iagoa\source\repos\TrabalhoSharpAFD\TrabalhoSharpAFD\obj\Debug\TrabalhoSharpAFD.csproj.AssemblyReference.cache
+C:\Users\iagoa\source\repos\TrabalhoSharpAFD\TrabalhoSharpAFD\obj\Debug\TrabalhoSharpAFD.csproj.SuggestedBindingRedirects.cache
+C:\Users\iagoa\source\repos\TrabalhoSharpAFD\TrabalhoSharpAFD\obj\Debug\TrabalhoSharpAFD.csproj.CoreCompileInputs.cache
+C:\Users\iagoa\source\repos\TrabalhoSharpAFD\TrabalhoSharpAFD\bin\Debug\TrabalhoSharpAFD.exe.config
+C:\Users\iagoa\source\repos\TrabalhoSharpAFD\TrabalhoSharpAFD\bin\Debug\TrabalhoSharpAFD.exe
+C:\Users\iagoa\source\repos\TrabalhoSharpAFD\TrabalhoSharpAFD\bin\Debug\TrabalhoSharpAFD.pdb
+C:\Users\iagoa\source\repos\TrabalhoSharpAFD\TrabalhoSharpAFD\obj\Debug\TrabalhoSharpAFD.exe
+C:\Users\iagoa\source\repos\TrabalhoSharpAFD\TrabalhoSharpAFD\obj\Debug\TrabalhoSharpAFD.pdb
