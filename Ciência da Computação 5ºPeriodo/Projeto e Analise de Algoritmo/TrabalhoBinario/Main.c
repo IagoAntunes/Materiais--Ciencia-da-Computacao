@@ -11,22 +11,22 @@ struct Estudante{
 };
 
 int Inserir(FILE *p,Estudante e,int i){
-	
+
     p = fopen("arquivoT.bin","ab");
     int opc=1;
-	while(opc != 0){	
+	while(opc != 0){
 		printf("\nAluno[%i]\n",i);
 		e.id = i;
-	
+
 		printf("Nome: ");
 		scanf("%s",&e.nome);
-	
+
 		printf("Nota: ");
 		scanf("%i",&e.nota);
-		
+
 		fwrite(&e,sizeof(struct Estudante),1,p);
 		i++;
-		
+
 		printf("Deseja Continuar...[1]SIM / [0]NaO \nR:");
 		scanf("%i",&opc);
 	}
@@ -45,7 +45,7 @@ void Ler(FILE *p,Estudante e,int EOF_ctrl){
 		}
 	}
 	fclose(p);
-	
+
 }
 
 FILE Deletar(FILE *p,Estudante e,int EOF_ctrl,int busca){
@@ -67,22 +67,20 @@ FILE Deletar(FILE *p,Estudante e,int EOF_ctrl,int busca){
 	}
 	fclose(p);
 	fclose(p2);
-	
+
 	remove("arquivoT.bin");
 	rename("tmp.bin", "ArquivoT.bin");
-
-
 }
 
 
 void Buscar(FILE *p,Estudante e,int EOF_ctrl,int busca){
-	
+
 	p=fopen("arquivoT.bin", "a+b");
-	
+
 	fseek(p,sizeof(struct Estudante) * (busca-1),SEEK_SET);
 	EOF_ctrl = fread(&e,sizeof(struct Estudante),1,p);
 	printf("Estudante[%i]: %s = %i \n",e.id,e.nome,e.nota);
-	
+
 	fclose(p);
 }
 
@@ -95,16 +93,16 @@ int main(void)
    int opc;
    int i =1;
    while(opc != 5){
-   		printf("\nOpcao:\n\tINSERIR[1]\n\tLER[2]\n\tBuscar[3]\n\tSair[5]\nR:");
+   		printf("\nOpcao:\n\tInserir[1]\n\tLer[2]\n\tBuscar[3]\n\tDeletar[4]\n\tSair[5]\nR:");
    		scanf("%i",&opc);
    		switch(opc){
    			//Inserir
    			case 1:
 			   Inserir(p,e,i);
-			   break;	
+			   break;
 			case 2:
 				Ler(p,e,EOF_ctrl);
-				break;	
+				break;
 			case 3:
 				int busca;
 				printf("Id para buscar:");
@@ -117,7 +115,7 @@ int main(void)
 				scanf("%i",&buscaDelete);
 				Deletar(p,e,EOF_ctrl,buscaDelete);
 				break;
-				
+
 	   }
    }
 }
