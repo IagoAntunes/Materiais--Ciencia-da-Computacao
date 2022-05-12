@@ -70,8 +70,33 @@ FILE Deletar(FILE *p,Estudante e,int EOF_ctrl,int busca){
 
 	remove("arquivoT.bin");
 	rename("tmp.bin", "ArquivoT.bin");
+
+
 }
 
+int Maior(FILE *p,Estudante e, int EOF_ctrl,int opc){
+    int maior = 0;
+    int menor = 0;
+	p=fopen("arquivoT.bin", "r");
+
+	while (!feof(p)){
+		EOF_ctrl=fread (&e, sizeof(struct Estudante), 1, p);
+		if (EOF_ctrl != 0){
+            if(e.nota > maior){
+                maior = e.nota;
+            }
+            if(e.nota < menor){
+                menor = e.nota;
+            }
+		}
+	}
+	fclose(p);
+    if(opc == 1){
+        return maior;
+    }else if(opc == 0){
+        return menor;
+    }
+}
 
 void Buscar(FILE *p,Estudante e,int EOF_ctrl,int busca){
 
@@ -92,8 +117,8 @@ int main(void)
    struct Estudante e;
    int opc;
    int i =1;
-   while(opc != 5){
-   		printf("\nOpcao:\n\tInserir[1]\n\tLer[2]\n\tBuscar[3]\n\tDeletar[4]\n\tSair[5]\nR:");
+   while(opc != -1){
+   		printf("\nOpcao:\n\tInserir[1]\n\tLer[2]\n\tBuscar[3]\n\tDeletar[4]\n\Maior Nota[5]\n\tMenor Nota[6]\n\tSair[-1]\nR:");
    		scanf("%i",&opc);
    		switch(opc){
    			//Inserir
@@ -115,11 +140,14 @@ int main(void)
 				scanf("%i",&buscaDelete);
 				Deletar(p,e,EOF_ctrl,buscaDelete);
 				break;
+            case 5:
+                printf("Maior Nota: %i",Maior(p,e,EOF_ctrl,1));
+                break;
+            case 6:
+                printf("Menor Nota: %i",Maior(p,e,EOF_ctrl,0););
+                break;
 
 	   }
    }
 }
-
-
-
 
