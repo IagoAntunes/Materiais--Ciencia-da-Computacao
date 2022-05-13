@@ -35,7 +35,7 @@ int Inserir(FILE *p,Estudante e,int i){
 }
 
 void Ler(FILE *p,Estudante e,int EOF_ctrl){
-	p=fopen("arquivoT.bin", "r");
+	p=fopen("arquivoT.bin", "rb");
 
 	while (!feof(p)){
 		EOF_ctrl=fread (&e, sizeof(struct Estudante), 1, p);
@@ -49,7 +49,7 @@ void Ler(FILE *p,Estudante e,int EOF_ctrl){
 
 FILE Deletar(FILE *p,Estudante e,int EOF_ctrl,int busca){
 
-	p=fopen("arquivoT.bin", "r");
+	p=fopen("arquivoT.bin", "rb");
 	FILE *p2;
 	p2 =fopen("tmp.bin", "wb");
 
@@ -74,7 +74,7 @@ FILE Deletar(FILE *p,Estudante e,int EOF_ctrl,int busca){
 int Maior(FILE *p,Estudante e, int EOF_ctrl,int opc){
     int maior = 0;
     int menor = 99;
-	p=fopen("arquivoT.bin", "r");
+	p=fopen("arquivoT.bin", "rb");
 
 	while (!feof(p)){
 		EOF_ctrl=fread (&e, sizeof(struct Estudante), 1, p);
@@ -149,7 +149,3 @@ int main(void)
 	   }
    }
 }
-
-
-
-
