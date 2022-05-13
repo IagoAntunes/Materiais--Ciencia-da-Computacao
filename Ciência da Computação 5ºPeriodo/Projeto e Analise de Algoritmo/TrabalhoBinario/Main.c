@@ -76,7 +76,7 @@ FILE Deletar(FILE *p,Estudante e,int EOF_ctrl,int busca){
 
 int Maior(FILE *p,Estudante e, int EOF_ctrl,int opc){
     int maior = 0;
-    int menor = 0;
+    int menor = 99;
 	p=fopen("arquivoT.bin", "r");
 
 	while (!feof(p)){
@@ -104,7 +104,9 @@ void Buscar(FILE *p,Estudante e,int EOF_ctrl,int busca){
 
 	fseek(p,sizeof(struct Estudante) * (busca-1),SEEK_SET);
 	EOF_ctrl = fread(&e,sizeof(struct Estudante),1,p);
-	printf("Estudante[%i]: %s = %i \n",e.id,e.nome,e.nota);
+	if(e.id <= busca){
+        printf("Estudante[%i]: %s = %i \n",e.id,e.nome,e.nota);
+	}
 
 	fclose(p);
 }
@@ -118,12 +120,12 @@ int main(void)
    int opc;
    int i =1;
    while(opc != -1){
-   		printf("\nOpcao:\n\tInserir[1]\n\tLer[2]\n\tBuscar[3]\n\tDeletar[4]\n\Maior Nota[5]\n\tMenor Nota[6]\n\tSair[-1]\nR:");
+   		printf("\nOpcao:\n\tInserir[1]\n\tLer[2]\n\tBuscar[3]\n\tDeletar[4]\n\tMaior Nota[5]\n\tMenor Nota[6]\n\tSair[-1]\nR:");
    		scanf("%i",&opc);
    		switch(opc){
    			//Inserir
    			case 1:
-			   Inserir(p,e,i);
+			   i = Inserir(p,e,i);
 			   break;
 			case 2:
 				Ler(p,e,EOF_ctrl);
@@ -144,10 +146,13 @@ int main(void)
                 printf("Maior Nota: %i",Maior(p,e,EOF_ctrl,1));
                 break;
             case 6:
-                printf("Menor Nota: %i",Maior(p,e,EOF_ctrl,0););
+                printf("Menor Nota: %i",Maior(p,e,EOF_ctrl,0));
                 break;
 
 	   }
    }
 }
+
+
+
 
