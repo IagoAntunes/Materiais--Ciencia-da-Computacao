@@ -11,7 +11,6 @@ struct Estudante{
 };
 
 int Inserir(FILE *p,Estudante e,int i){
-
     p = fopen("arquivoT.bin","ab");
     int opc=1;
 	while(opc != 0){
@@ -70,8 +69,6 @@ FILE Deletar(FILE *p,Estudante e,int EOF_ctrl,int busca){
 
 	remove("arquivoT.bin");
 	rename("tmp.bin", "ArquivoT.bin");
-
-
 }
 
 int Maior(FILE *p,Estudante e, int EOF_ctrl,int opc){
@@ -98,12 +95,12 @@ int Maior(FILE *p,Estudante e, int EOF_ctrl,int opc){
     }
 }
 
-void Buscar(FILE *p,Estudante e,int EOF_ctrl,int busca){
+void Buscar(FILE *p,Estudante e,int busca){
 
 	p=fopen("arquivoT.bin", "a+b");
 
 	fseek(p,sizeof(struct Estudante) * (busca-1),SEEK_SET);
-	EOF_ctrl = fread(&e,sizeof(struct Estudante),1,p);
+	fread(&e,sizeof(struct Estudante),1,p);
 	if(e.id <= busca){
         printf("Estudante[%i]: %s = %i \n",e.id,e.nome,e.nota);
 	}
@@ -134,7 +131,7 @@ int main(void)
 				int busca;
 				printf("Id para buscar:");
 				scanf("%i",&busca);
-				Buscar(p,e,EOF_ctrl,busca);
+				Buscar(p,e,busca);
 				break;
 			case 4:
 				int buscaDelete;
