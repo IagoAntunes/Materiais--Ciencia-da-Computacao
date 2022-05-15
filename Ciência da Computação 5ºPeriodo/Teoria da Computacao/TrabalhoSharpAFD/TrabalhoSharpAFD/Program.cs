@@ -11,13 +11,14 @@ namespace TrabalhoSharpAFD
     {
         static void Main(string[] args)
         {
+            int escolha = 1;
             Sistema sistema = Menu();
 
+            do {
             Console.WriteLine("Digite...");
             string palavra = Console.ReadLine();
 
             if (sistema.IsValid(palavra, sistema))
-            {
                 sistema.estadoATUAL = sistema.ListaTransicao[0].EstadoUm;
                 foreach (var letra in palavra)
                 {
@@ -28,23 +29,21 @@ namespace TrabalhoSharpAFD
                             if (item.NextItem.Equals(letra.ToString()))
                             {
                                 sistema.estadoATUAL = item.EstadoDois;
-                                Console.WriteLine("{0} ----{1}---- {2}", item.EstadoUm, item.NextItem, sistema.estadoATUAL);
+                                Console.WriteLine("({0}) ----({1})---- ({2})", item.EstadoUm, item.NextItem, sistema.estadoATUAL);
                                 break;
-                            }
-                            else
-                            {
-                                //Erro na existe transicao para este simbolo partindo de estadoATUAL
                             }
                         }
                     }
                 }
-            }
-            var Situacao = sistema.IsValid(sistema) ? "Correto" : "Errado";
-            Console.WriteLine(Situacao);
+            Console.WriteLine(sistema.IsValid(sistema) ? "Correto" : "Errado");
 
+            Console.WriteLine("Continuar....[1]Sim");
+            escolha = int.Parse(Console.ReadLine());
+            }while (escolha == 1) ;
 
             Console.ReadLine();
         }
+        //Menu de Escolha Usuario
         public static Sistema Menu()
         {
             Console.WriteLine("--Bem Vindo--");
@@ -66,6 +65,7 @@ namespace TrabalhoSharpAFD
             }
             return null;
         }
+        //Opcao de Inserir valores no arquivo Manualmente
         public static string GravarArquivo()
         {
             FileInfo aFile = new FileInfo(@"C:\Users\iagoa\source\repos\TrabalhoSharpAFD\TrabalhoSharpAFD\Dados3.txt");
@@ -77,14 +77,20 @@ namespace TrabalhoSharpAFD
                 sw.Write("S" + i.ToString() + " ");
             }
             sw.WriteLine();
-            Console.WriteLine("Tamanho Alfabeto:");
-            int numAlfabeto = int.Parse(Console.ReadLine());
-            for (int i = 0; i < numAlfabeto; i++)
+            Console.WriteLine("Alfabeto:");
+            string Alfabeto = Console.ReadLine();
+            foreach(var letra in Alfabeto)
             {
-                Console.WriteLine("Valor:");
-                var valor = Console.ReadLine();
-                sw.Write(valor.ToString() + " ");
+                if(letra.Equals('d'))
+                    for (int j = 1; j <= 9; j++)
+                        if(j == 9)
+                            sw.Write(j.ToString());
+                        else
+                            sw.Write(j.ToString() + " ");
+                else
+                    sw.Write(letra.ToString());
             }
+
             sw.WriteLine();
 
             Console.WriteLine("Estado Inicial:");

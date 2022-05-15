@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,55 +12,84 @@ namespace TrabalhoSharpAFD
 
         #region Caracteristicas AFD
         public int nEstados { get; set; }
+        public string Iestado { get; set; }
+        public string estadoATUAL { get; set; }
         public List<String> ListEstados { get; set; }
         public List<String> Alfabeto { get; set; }
-        public string Iestado { get; set; }
         public List<string> Festado { get; set; }
-
-        public string estadoATUAL { get; set; }
-
+        #endregion
 
         public List<List<String>> Transicao = new List<List<string>>();
         public List<Transicao> ListaTransicao = new List<Transicao>();
-        #endregion
 
         private string[] file { get; set; }
-
+        /// <summary>
+        /// Construtor com Parametro Õpcional
+        /// </summary>
+        /// <param name="caminho"></param>
         public Sistema(string caminho = "C:\\Users\\iagoa\\source\\repos\\TrabalhoSharpAFD\\TrabalhoSharpAFD\\Dados.txt")
         {
             file = System.IO.File.ReadAllLines(caminho);
             RecebeDados(file);
             SeparaLista();
         }
-
+        /// <summary>
+        /// Recebe dados do arquivo e transforma em Objetos
+        /// </summary>
+        /// <param name="file"></param>
         private void RecebeDados(string[] file)
         {
             nEstados = file[0].Split(' ').Count();
             ListEstados = file[0].Split(' ').ToList();
-            Alfabeto = file[1].Split(' ').ToList();
+            Alfabeto = file[1].ToLower().Split(' ').ToList();
+            if (Alfabeto.Contains("d"))
+                Alfabeto = AlteraAlfabeto(Alfabeto);
             Iestado = file[2].ToUpper();
             Festado = file[3].ToUpper().Split(' ').ToList();
             for (int i = 4; i < file.Length; i++)
-            {
-                Transicao.Add(file[i].ToUpper().Split(' ').ToList());
-            }
+                Transicao.Add(file[i].ToLower().Split(' ').ToList());
+            //aaaa
         }
+        /// <summary>
+        /// Adiciona uma transição para cada numero inteiro
+        /// </summary>
         private void SeparaLista()
         {
             foreach (var item in Transicao)
             {
-                ListaTransicao.Add(new Transicao { EstadoUm = item[0], EstadoDois = item[1], NextItem = item[2] });
+                if(item[2] == "d")
+                    for (int i = 1; i <= 9; i++)
+                        ListaTransicao.Add(new Transicao { EstadoUm = item[0], EstadoDois = item[1], NextItem = i.ToString() });
+                else
+                    ListaTransicao.Add(new Transicao { EstadoUm = item[0], EstadoDois = item[1], NextItem = item[2] });
             }
-
         }
-        
-        //Validacao Inicial
+        /// <summary>
+        /// Retorna uma nova lista com alfabeto de numeros inteiros
+        /// </summary>
+        /// <param name="Alfabeto"></param>
+        /// <returns></returns>
+        private List<string> AlteraAlfabeto(List<String> Alfabeto)
+        {
+            List<string> listaAlfabeto2 = new List<string>();
+            foreach(var item in Alfabeto)
+            {
+                if(item != "d")
+                    listaAlfabeto2.Add(item);
+                else
+                    for(int i = 1; i <= 9; i++)
+                        listaAlfabeto2.Add(i.ToString());
+            }
+            return listaAlfabeto2;
+        }
+        /// <summary>
+        /// Validação para Inicio do AFD
+        /// </summary>
+        /// <param name="palavra"></param>
+        /// <param name="sistema"></param>
+        /// <returns></returns>
         public bool IsValid(string palavra, Sistema sistema)
         {
-            //Verifica se a palavra esta de acordo com o alfabet
-            //Verifica se a palavra esta de acordo com o alfabet
-            //Verifica se a palavra esta de acordo com o alfabet
-            //Verifica se a palavra esta de acordo com o alfabet
             //Verifica se a palavra esta de acordo com o alfabet
             if (true)
             {
@@ -96,12 +126,16 @@ namespace TrabalhoSharpAFD
 
             return true;
         }
-        //Validacao Final
+        /// <summary>
+        /// Validação Fim do AFD
+        /// </summary>
+        /// <param name="sistema"></param>
+        /// <returns></returns>
         public bool IsValid(Sistema sistema)
         {
             //Verifica se o estadoAtual é o final
             if (true)
-                if (!Festado.Contains(estadoATUAL))
+                if (!Festado.Contains(estadoATUAL.ToUpper()))
                     return false;
 
             return true;
