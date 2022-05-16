@@ -15,30 +15,29 @@ namespace TrabalhoSharpAFD
             Sistema sistema = Menu();
 
             do {
-            Console.WriteLine("Digite...");
-            string palavra = Console.ReadLine();
+                Console.WriteLine("Digite...");
+                string palavra = Console.ReadLine();
 
-            if (sistema.IsValid(palavra, sistema))
-                sistema.estadoATUAL = sistema.ListaTransicao[0].EstadoUm;
-                foreach (var letra in palavra)
+                if (sistema.IsValid(palavra, sistema))
                 {
-                    foreach (var item in sistema.ListaTransicao)
-                    {
-                        if (item.EstadoUm.Equals(sistema.estadoATUAL))
-                        {
-                            if (item.NextItem.Equals(letra.ToString()))
+                    string palavraTest = "";
+                    sistema.estadoATUAL = sistema.ListaTransicao[0].EstadoUm;
+                    foreach (var letra in palavra)
+                        foreach (var item in sistema.ListaTransicao)
+                            if (item.EstadoUm.Equals(sistema.estadoATUAL) && item.NextItem.Equals(letra.ToString()))
                             {
                                 sistema.estadoATUAL = item.EstadoDois;
                                 Console.WriteLine("({0}) ----({1})---- ({2})", item.EstadoUm, item.NextItem, sistema.estadoATUAL);
+                                palavraTest += letra;
                                 break;
                             }
-                        }
-                    }
+                    Console.WriteLine(sistema.IsValid(sistema,palavra,palavraTest) ? "Correto" : "Errado");
                 }
-            Console.WriteLine(sistema.IsValid(sistema) ? "Correto" : "Errado");
+                else
+                    Console.WriteLine("Erro...");
 
-            Console.WriteLine("Continuar....[1]Sim");
-            escolha = int.Parse(Console.ReadLine());
+                Console.WriteLine("Continuar....[1]Sim");
+                escolha = int.Parse(Console.ReadLine());
             }while (escolha == 1) ;
 
             Console.ReadLine();
@@ -70,6 +69,7 @@ namespace TrabalhoSharpAFD
         {
             FileInfo aFile = new FileInfo(@"C:\Users\iagoa\source\repos\TrabalhoSharpAFD\TrabalhoSharpAFD\Dados3.txt");
             StreamWriter sw = new StreamWriter(@"C:\Users\iagoa\source\repos\TrabalhoSharpAFD\TrabalhoSharpAFD\Dados3.txt");
+
             Console.WriteLine("Numero de Estados:");
             int numEstados = int.Parse(Console.ReadLine());
             for (int i = 0; i < numEstados; i++)
@@ -77,6 +77,7 @@ namespace TrabalhoSharpAFD
                 sw.Write("S" + i.ToString() + " ");
             }
             sw.WriteLine();
+
             Console.WriteLine("Alfabeto:");
             string Alfabeto = Console.ReadLine();
             foreach(var letra in Alfabeto)

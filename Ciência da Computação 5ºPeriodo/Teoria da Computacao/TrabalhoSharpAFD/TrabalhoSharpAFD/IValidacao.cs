@@ -8,7 +8,7 @@ namespace TrabalhoSharpAFD
 {
     interface IValidacao
     {
-        bool IsValid(Sistema sistema);
+        bool IsValid(Sistema sistema,string palavra,string palavraTest);
         bool IsValid(string palavra, Sistema sistema);
 
     }

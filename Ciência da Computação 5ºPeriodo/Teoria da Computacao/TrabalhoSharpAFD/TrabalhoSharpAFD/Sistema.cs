@@ -131,12 +131,15 @@ namespace TrabalhoSharpAFD
         /// </summary>
         /// <param name="sistema"></param>
         /// <returns></returns>
-        public bool IsValid(Sistema sistema)
+        public bool IsValid(Sistema sistema,string palavra,string palavraTest)
         {
             //Verifica se o estadoAtual é o final
-            if (true)
-                if (!Festado.Contains(estadoATUAL.ToUpper()))
-                    return false;
+            if (!Festado.Contains(estadoATUAL.ToUpper()))
+                return false;
+
+            if (!palavra.Equals(palavraTest))
+                return false;
+
 
             return true;
         }
