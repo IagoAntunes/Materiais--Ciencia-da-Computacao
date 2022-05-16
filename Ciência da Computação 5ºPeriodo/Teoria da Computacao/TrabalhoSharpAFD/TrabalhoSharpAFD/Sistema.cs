@@ -58,7 +58,7 @@ namespace TrabalhoSharpAFD
             foreach (var item in Transicao)
             {
                 if(item[2] == "d")
-                    for (int i = 1; i <= 9; i++)
+                    for (int i = 0; i <= 9; i++)
                         ListaTransicao.Add(new Transicao { EstadoUm = item[0], EstadoDois = item[1], NextItem = i.ToString() });
                 else
                     ListaTransicao.Add(new Transicao { EstadoUm = item[0], EstadoDois = item[1], NextItem = item[2] });
@@ -77,7 +77,7 @@ namespace TrabalhoSharpAFD
                 if(item != "d")
                     listaAlfabeto2.Add(item);
                 else
-                    for(int i = 1; i <= 9; i++)
+                    for(int i = 0; i <= 9; i++)
                         listaAlfabeto2.Add(i.ToString());
             }
             return listaAlfabeto2;

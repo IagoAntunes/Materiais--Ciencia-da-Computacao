@@ -82,7 +82,7 @@ namespace TrabalhoSharpAFD
             foreach(var letra in Alfabeto)
             {
                 if(letra.Equals('d'))
-                    for (int j = 1; j <= 9; j++)
+                    for (int j = 0; j <= 9; j++)
                         if(j == 9)
                             sw.Write(j.ToString());
                         else
